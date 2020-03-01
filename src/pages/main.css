@@ -1,0 +1,646 @@
+html {
+    --site-color: #00aaaa;
+    --yellow-color: #ffe146;
+    --dark-color: #1e212e;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--light);
+    background-color: var(--dark-color);
+}
+
+i {
+    color: var(--dark);
+}
+
+p {
+    font-weight: 300;
+}
+
+span {
+    color: var(--gray);
+}
+
+table {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 50px;
+}
+
+@media (max-width: 384px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 50px;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-color) !important;
+}
+
+.btn-custom {
+    background-color: var(--site-color);
+    border-radius: 30px;
+    padding: 14px 12px;
+    color: var(--light);
+    box-shadow: 0 0 1rem var(--site-color);
+}
+
+.btn-custom:hover {
+    background-color: var(--yellow-color);
+    color: var(--dark);
+    box-shadow: 0 0 1rem var(--yellow-color);
+}
+
+/* Jivosite button fix */
+.button_10 {
+    margin: 0;
+}
+
+/* Jivosite button fix */
+
+
+/* Hover animation start */
+
+a.middleHover {
+    position: relative;
+}
+
+a.middleHover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.middleHover.middleHover_siteColor:before {
+    background-color: var(--site-color);
+}
+
+a.middleHover:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Hover animation end */
+
+
+
+/* Slider start*/
+
+.slick-prev,
+.slick-next {
+    width: 1.75rem;
+    height: 1.75rem;
+    top: 70px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--dark-color);
+    font-size: 1.75rem;
+}
+
+@media (min-width: 992px) {
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 2.25rem;
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .slick-next {
+        right: -35px;
+    }
+
+    .slick-prev {
+        left: -35px;
+    }
+}
+
+.slick-dots li button:before {
+    font-size: .55rem;
+    color: var(--dark-color);
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--site-color);
+}
+
+/* Slider end*/
+
+
+
+/* Main section start */
+#main {
+    background: url(../img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 95%;
+    max-width: 100%;
+    position: absolute;
+    z-index: 9999;
+}
+
+.main-description p {
+    color: var(--light);
+    font-size: 1.35rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        background-color: var(--site-color);
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-description h1 {
+        font-size: 1.75rem;
+    }
+
+    .main-description p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-height: 991px) {
+    .main-description h1 {
+        font-size: 2.75rem;
+    }
+
+    .main-description p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-height: 767px) {
+    .main-description h1 {
+        font-size: 2.25rem;
+    }
+
+    .main-description p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-height: 575px) {
+    .main-description h1 {
+        font-size: 1.65rem;
+    }
+
+    .main-description p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-height: 755px) and (min-aspect-ratio: 1/1) {
+
+    .main-description {
+        padding-top: 65px;
+    }
+
+    #main h1 {
+        font-size: 3.25rem;
+    }
+
+    #main p {
+        font-size: 1.25rem;
+        margin: .5rem 0;
+    }
+}
+
+@media (max-height: 512px) and (min-aspect-ratio: 1/1) {
+
+    #main h1 {
+        font-size: 3rem;
+    }
+
+    #main p {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-height: 448px) and (min-aspect-ratio: 1/1) {
+
+    .navbar {
+        padding: .25rem .75rem;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    #main h1 {
+        font-size: 2.5rem;
+    }
+
+    #main p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-height: 384px) and (min-aspect-ratio: 1/1) {
+
+    #main h1 {
+        font-size: 2rem;
+    }
+
+    #main p {
+        font-size: 1rem;
+    }
+}
+
+.navbar-phone-link {
+    font-weight: 500;
+    color: var(--site-color) !important;
+    padding: 8px;
+    text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+    .navbar-phone-link {
+        color: var(--light) !important;
+        padding: 8px 0;
+    }
+}
+
+.navbar .nav-link {
+    color: var(--light) !important;
+}
+
+.navbar-brand td {
+    padding: 5px;
+}
+
+.navbar-brand svg {
+    height: 40px;
+    fill: var(--light);
+}
+
+.navbar-brand span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--light);
+}
+
+@media (max-width: 384px) {
+    .navbar-brand span {
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+.main-description>.row>div>button {
+    margin-top: 8px;
+}
+
+/* Main section end */
+
+
+
+/* Pros section start */
+.pros-card {
+    margin-bottom: 30px;
+    opacity: 0;
+}
+
+.pros-card i {
+    margin-bottom: 15px;
+    font-size: 7rem;
+    transition: color 0.5s ease;
+}
+
+.pros-card i:hover {
+    color: var(--site-color);
+    cursor: pointer;
+}
+
+.star-message{
+    font-size: .85rem;
+}
+
+/* Pros section end */
+
+
+
+/* Electronics section start */
+
+.electronics-slider {
+    opacity: 0;
+}
+
+.electronics-card {
+    margin-bottom: 30px;
+}
+
+.electronics-card i {
+    margin-bottom: 15px;
+    font-size: 5rem;
+    transition: color 0.5s ease;
+}
+
+.electronics-card i:hover {
+    color: var(--site-color);
+    cursor: pointer;
+}
+
+.electronics-card span {
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.electronics-card tr:nth-child(2n) td {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.electronics-card p {
+    color: var(--gray);
+}
+
+/* Electronics section end */
+
+
+
+/* Gap section start */
+
+#gap1 p {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+@media (max-width: 479px) {
+    #gap1 p {
+        font-size: 1.1rem;
+    }
+}
+
+#gap1 img {
+    max-width: 100%;
+}
+
+/* Gap section end */
+
+
+
+/* Problems section start */
+
+#problems{
+    padding-bottom: 75px;
+}
+
+#problems h2 {
+    color: var(--light);
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#problems>.container>.row {
+    background-color: var(--dark-color);
+    padding: 0;
+}
+
+#problems>p {
+    color: var(--gray);
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.problems-slider {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.problems-card,
+.problems-card td {
+    padding: 0;
+}
+
+.problems-card img {
+    width: 100%;
+}
+
+.problems-card h4 {
+    color: var(--light);
+    font-size: 1.3rem;
+    white-space: nowrap;
+    margin-top: 17px;
+    transition: color 0.5s ease;
+}
+
+.problems-card h4:hover {
+    color: var(--site-color);
+    cursor: pointer;
+}
+
+#problems .slick-dots li button:before {
+    color: var(--site-color);
+}
+
+#problems .slick-dots li.slick-active button:before {
+    color: var(--gray);
+}
+
+#problems .slick-arrow {
+    display: none !important;
+}
+
+/* Problems section end */
+
+#gap {
+    padding-bottom: 25px;
+}
+
+/* Help section start */
+
+#help {
+    background: url(../img/parallax-img-1.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 0;
+}
+
+#help h2 {
+    margin-bottom: 0;
+}
+
+#help p {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Help section end */
+
+
+
+/* Price section start */
+
+#price {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#price h2 {
+    color: var(--light);
+    margin-bottom: 0;
+}
+
+#price p {
+    color: var(--gray);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .simplebar-wrapper {
+        max-height: 40vh;
+    }
+}
+
+.simplebar-content-wrapper {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: var(--light);
+    background-color: var(--site-color);
+    border-color: var(--site-color);
+}
+
+#price tr:first-child {
+    background-color: var(--gray);
+}
+
+#price td:nth-child(n) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+#price td:nth-child(2n){
+    width: 100px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+
+    #price td:nth-child(2n),
+    #price td:nth-child(3n) {
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    #price .col-md-8 {
+        margin-top: 50px;
+    }
+}
+
+/* Price section end */
+
+#footer {
+    padding-top: 0;
+    padding-bottom: 75px;
+}
+
+.footer-contacts {
+    padding-top: 1.4rem;
+}
+
+.footer-contacts-button button {
+    margin-top: 1rem;
+    padding: 7px 12px;
+}
+
+#footer hr {
+    border-top: 1px solid var(--gray);
+}
+
+#footer p,
+#footer span {
+    font-size: .9rem;
+    color: var(--light);
+}
+
+#footer a {
+    color: var(--site-color);
+    text-decoration: none;
+}
+
+#footer .navbar-brand-logo {
+    width: 50px;
+}
+
+#footer .navbar-brand span {
+    font-size: 2rem;
+}
+
+#footer .navbar-brand p {
+    color: var(--gray);
+    font-size: .9rem;
+    white-space: normal;
+}
