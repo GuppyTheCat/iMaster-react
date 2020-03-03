@@ -124,46 +124,46 @@ a.middleHover:hover:before {
 
 .slick-prev,
 .slick-next {
-    width: 1.75rem;
-    height: 1.75rem;
-    top: 70px;
+    width: 1.75rem!important;
+    height: 1.75rem!important;
+    top: 70px!important;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    color: var(--dark-color);
-    font-size: 1.75rem;
+    color: var(--dark-color)!important;
+    font-size: 1.75rem!important;
 }
 
 @media (min-width: 992px) {
 
     .slick-prev:before,
     .slick-next:before {
-        font-size: 2.25rem;
+        font-size: 2.25rem!important;
     }
 
     .slick-prev,
     .slick-next {
-        width: 2.25rem;
-        height: 2.25rem;
+        width: 2.25rem!important;
+        height: 2.25rem!important;
     }
 
     .slick-next {
-        right: -35px;
+        right: -35px!important;
     }
 
     .slick-prev {
-        left: -35px;
+        left: -35px!important;
     }
 }
 
 .slick-dots li button:before {
-    font-size: .55rem;
-    color: var(--dark-color);
+    font-size: .55rem!important;
+    color: var(--dark-color)!important;
 }
 
 .slick-dots li.slick-active button:before {
-    color: var(--site-color);
+    color: var(--site-color)!important;
 }
 
 /* Slider end*/
