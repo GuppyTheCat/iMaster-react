@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import * as serviceWorker from './serviceWorker';
@@ -10,6 +9,9 @@ import Main from "./pages/main"
 import Services from "./pages/services"
 
 import * as JivoSite from "react-jivosite";
+
+
+
 
 class App extends Component {
     render() {

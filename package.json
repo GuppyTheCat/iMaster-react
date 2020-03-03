@@ -9,7 +9,9 @@
     "react-helmet": "^5.2.1",
     "react-jivosite": "^1.0.0",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +36,6 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2"
-  }
+  },
+  "homepage": "http://imaster-test.ru.fstest.ru"
 }
