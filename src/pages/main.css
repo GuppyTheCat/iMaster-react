@@ -172,7 +172,7 @@ a.middleHover:hover:before {
 
 /* Main section start */
 #main {
-    background: url(../img/main.jpg);
+    background: url(/img/main.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -358,7 +358,6 @@ a.middleHover:hover:before {
 /* Pros section start */
 .pros-card {
     margin-bottom: 30px;
-    opacity: 0;
 }
 
 .pros-card i {
@@ -370,6 +369,10 @@ a.middleHover:hover:before {
 .pros-card i:hover {
     color: var(--site-color);
     cursor: pointer;
+}
+
+.pros-card-content{
+    opacity: 0;
 }
 
 .star-message{
@@ -511,7 +514,7 @@ a.middleHover:hover:before {
 /* Help section start */
 
 #help {
-    background: url(../img/parallax-img-1.png);
+    background: url(/img/parallax-img-1.png);
     background-position: center;
     background-size: cover;
     width: 100%;

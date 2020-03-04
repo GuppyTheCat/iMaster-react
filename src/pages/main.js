@@ -1,27 +1,54 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBCollapse, MDBNavbarNav, MDBNavItem } from "mdbreact";
-import './main.css';
+import TrackVisibility from 'react-on-screen';
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
+import "animate.css/animate.min.css";
+import './main.css';
 
 class Main extends Component {
 
     constructor(props) {
         super(props)
-
         this.state = {
             collapseID: ""
         }
     }
 
-    navbarToggleCollapse = collapseID => () =>
+    navbarToggleCollapse = collapseID => () => {
         this.setState(prevState => ({
             collapseID: prevState.collapseID !== collapseID ? collapseID : ""
         }));
+    }
+
+    setAnimationType(index) {
+        let screenWidth = window.innerWidth
+        let type
+
+        if (screenWidth < 992) {
+            type = index % 2 ? 'fadeInRight' : 'fadeInLeft'
+        }
+
+        else {
+            switch (index) {
+                case 0:
+                case 3: type = 'fadeInLeft'
+                    break
+                case 2:
+                case 5: type = 'fadeInRight'
+                    break
+                case 1: type = 'fadeInDown'
+                    break
+                case 4: type = 'fadeInUp'
+                    break
+                default: break
+            }
+        }
+
+        return type;
+    }
+
 
     render() {
         const sliderSettings = {
@@ -57,6 +84,93 @@ class Main extends Component {
             }
             ]
         };
+
+        const electronicSliderItems = [
+            {
+                title: 'Телефоны',
+                classes: 'fa fa-mobile-alt'
+            },
+            {
+                title: 'Планшеты',
+                classes: 'fas fa-tablet-alt'
+            },
+            {
+                title: 'Компьютеры',
+                classes: 'fa fa-desktop'
+            },
+            {
+                title: 'Ноутбуки',
+                classes: 'fa fa-laptop'
+            },
+            {
+                title: 'Телевизоры',
+                classes: 'fa fa-tv'
+            },
+            {
+                title: 'Игровые консоли',
+                classes: 'fas fa-game-console-handheld'
+            },
+            {
+                title: 'Фотоаппараты',
+                classes: 'fa fa-camera'
+            },
+            {
+                title: 'Видеокамеры',
+                classes: 'fa fa-video'
+            },
+            {
+                title: 'Плееры',
+                classes: 'fa fa-mp3-player'
+            },
+            {
+                title: 'Навигаторы',
+                classes: 'fa fa-location-arrow'
+            },
+            {
+                title: 'Пауэрбанки',
+                classes: 'fa fa-battery-three-quarters'
+            },
+            {
+                title: 'Вейпы',
+                classes: 'fa fa-smoking'
+            },
+            {
+                title: 'Электроинструмент',
+                classes: 'fa fa-tools'
+            },
+            {
+                title: 'ЭБУ',
+                classes: 'fa fa-car-mechanic'
+            }
+        ]
+
+        const prosItems = [
+            {
+                title: 'Бесплатная диагностика',
+                classes: 'far fa-piggy-bank'
+            },
+            {
+                title: 'Бесплатная консультация по телефону или в чате на сайте',
+                classes: 'far fa-comment'
+            },
+            {
+                title: 'Бесплатный выезд домой или в офис *',
+                classes: 'far fa-car'
+            },
+            {
+                title: 'Использую оригинальные запчасти',
+                classes: 'far fa-microchip'
+            },
+            {
+                title: 'Работаю круглосуточно 7 дней в неделю',
+                classes: 'far fa-history'
+            },
+            {
+                title: 'Подтверждаю качества работы гарантией',
+                classes: 'far fa-check'
+            }
+        ]
+
         return (
             <>
                 <MDBContainer id="main" fluid>
@@ -79,8 +193,7 @@ class Main extends Component {
                                             </tr>
                                         </table>
                                     </MDBNavbarBrand>
-                                    <MDBNavbarToggler onClick={this.navbarToggleCollapse("navbarCollapse")}>
-                                    </MDBNavbarToggler>
+                                    <MDBNavbarToggler onClick={this.navbarToggleCollapse("navbarCollapse")} />
                                     <MDBCollapse id="navbarCollapse" isOpen={this.state.collapseID} navbar>
                                         <MDBNavbarNav right className="mr-0 ml-auto">
                                             <MDBNavItem className="mr-4">
@@ -124,149 +237,87 @@ class Main extends Component {
                     <MDBContainer>
                         <MDBRow>
                             <MDBCol>
-                                <Slider {...sliderSettings} class="electronics-slider animated">
-                                    <div className="electronics-card track">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-mobile-alt"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Телефоны</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fas fa-tablet-alt"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Планшеты</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-desktop"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Компьютеры</span></td>
-                                            </tr>
-
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-laptop"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Ноутбуки</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-tv"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Телевизоры</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fas fa-game-console-handheld"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Игровые консоли</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-camera"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Фотоаппараты</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-video"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Видеокамеры</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-mp3-player"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Плееры</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-location-arrow"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Навигаторы</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-battery-three-quarters"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Пауэрбанки</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-smoking"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Вейпы</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-tools"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>Электроинструмент</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <div className="electronics-card">
-                                        <table>
-                                            <tr>
-                                                <td><i className="fa fa-car-mechanic"></i></td>
-                                            </tr>
-                                            <tr>
-                                                <td><span>ЭБУ</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </Slider>
+                                <TrackVisibility once>
+                                    {({ isVisible }) => (
+                                        <Slider {...sliderSettings} className={'electronics-slider animated ' + (isVisible ? 'fadeInRight' : '')}>
+                                            {
+                                                electronicSliderItems.map((item, index) => {
+                                                    return (
+                                                        <div
+                                                            key={index}
+                                                            className={
+                                                                'electronics-card' +
+                                                                (index === 0 ? ' track' : '')
+                                                            }>
+                                                            <table>
+                                                                <tr>
+                                                                    <td><i className={item.classes}></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><span>{item.title}</span></td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
+                                        </Slider>
+                                    )}
+                                </TrackVisibility>
+                            </MDBCol>
+                        </MDBRow>
+                    </MDBContainer>
+                </MDBContainer>
+                <MDBContainer id="gap1" fluid className="section bg-dark text-center">
+                    <MDBContainer>
+                        <MDBRow className="align-items-center">
+                            <MDBCol size="12" md="8">
+                                <p>Я более 8 лет занимаюсь ремонтом мобильной электроники. <br />Если вы ищете недорогой и
+                                    качественный сервис,<br /> то вы попали точно по адресу.<br /> Произвожу надежный и быстрый ремонт любой сложности.<br />
+                                    Часто клиенты обращаются с техникой,<br /> с которой готовы были проститься.<br /> Цены в крупных СЦ не радуют ?<br />
+                                    А гарантий на выполненный ремонт нет?<br /> Даю гарантию на аппараты с попаданием влаги в устройство<br />
+                                    и беру на себя ответственность за каждое действие<br /> с вашим любимым девайсом!<br />
+                                    Не стесняйтесь задавать вопросы!<br />Окажу помощь каждому клиенту.
+                                </p>
+                            </MDBCol>
+                            <MDBCol className="d-none d-md-block" md="4">
+                                <img src="img/iphone.png" alt="" />
+                            </MDBCol>
+                        </MDBRow>
+                    </MDBContainer>
+                </MDBContainer>
+                <MDBContainer id="pros" fluid className="section bg-light text-center">
+                    <MDBContainer>
+                        <MDBRow>
+                            <MDBCol size="12">
+                                <h2>
+                                    Преимущества ремонта в iМастер
+                                </h2>
+                            </MDBCol>
+                            {
+                                prosItems.map((item, index) => {
+                                    return (
+                                        <MDBCol key={index} size="12" lg="4" sm="6" className='pros-card'>
+                                            <TrackVisibility once>
+                                                {({ isVisible }) => (
+                                                    <div className={'pros-card-content animated ' + (isVisible ? this.setAnimationType(index) : '')}>
+                                                        <table>
+                                                            <tr>
+                                                                <td><i className={item.classes}></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><span>{item.title}</span></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                )}
+                                            </TrackVisibility>
+                                        </MDBCol>
+                                    )
+                                })
+                            }
+                            <MDBCol size="12" className="mt-3 star-message">
+                                <span>* После 22:00 стоимость выезда - 300 руб.</span>
                             </MDBCol>
                         </MDBRow>
                     </MDBContainer>
