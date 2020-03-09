@@ -21,7 +21,7 @@ class Main extends Component {
         super(props)
         this.state = {
             collapseID: "",
-            activeItem: "1"
+            activeItem: 1
         }
     }
 
@@ -485,6 +485,53 @@ class Main extends Component {
                     { name: 'Замена микрофона ', price: 'От 500' }]
             },
             {
+                title: 'Навигаторы / радар-детекторы',
+                services: [
+                    { name: 'Наименование работ', price: 'Цена, р.' },
+                    { name: 'Диагностика', price: 'Бесплатно' },
+                    { name: 'Установка и обновление Навител ', price: '700' },
+                    { name: 'Установка и обновление карт ', price: '700' },
+                    { name: 'Прошивка', price: '800' },
+                    { name: 'Обновление прошивки', price: '500' },
+                    { name: 'Восстановление прошивки', price: '800' },
+                    { name: 'Настройка', price: '500' },
+                    { name: 'Русификация', price: '500' },
+                    { name: 'Замена дисплея', price: '600' },
+                    { name: 'Замена тачскрина', price: '600' },
+                    { name: 'Восстановение питания', price: '600' },
+                    { name: 'Восстановение шлейфа от 3 до 5 дорожек', price: '600' },
+                    { name: 'Восстановение шлейфа от 5 до 10 дорожек', price: '1000' },
+                    { name: 'Замена аудио разъёма', price: '600' },
+                    { name: 'Восстановление GPS', price: '700' },
+                    { name: 'Замена (ремонт) корпуса (корпусных элементов)', price: '600' },
+                    { name: 'Замена разъёма mini/microUSB', price: '600' },
+                    { name: 'Замена разъёма питания', price: '600' },
+                    { name: 'Замена разъёма карты памяти', price: '700' },
+                    { name: 'Замена разъёма сим карты', price: '700' },
+                    { name: 'Замена динамика', price: '500' },
+                    { name: 'Замена микрофона', price: '500' },
+                    { name: 'Замена аккумулятора', price: '700' },
+                    { name: 'Замена кнопки', price: '600' },
+                    { name: 'Восстановление после попадания жидкости', price: '600' }]
+            },
+            {
+                title: 'Пауэрбанки',
+                services: [
+                    { name: 'Наименование работ', price: 'Цена, р.' },
+                    { name: 'Диагностика', price: 'Бесплатно' },
+                    { name: 'Замена элементов питания', price: '500' },
+                    { name: 'Замена разъёма зарядки', price: '500' },
+                    { name: 'Замена корпуса (ремонт корпуса)', price: 'От 500' },
+                    { name: 'Замена коннектора на плате', price: 'От 400' },
+                    { name: 'Замена кнопки', price: 'От 400' },
+                    { name: 'Замена экрана', price: 'От 600' },
+                    { name: 'Ремонт платы питания (управления)', price: 'От 500' },
+                    { name: 'Ремонт после попадания жидкости', price: 'От 500' },
+                    { name: 'Ремонт после короткого замыкания', price: 'От 500' },
+                    { name: 'Замена кабеля', price: 'От 500' }
+                ]
+            },
+            {
                 title: 'Вейпы',
                 services: [
                     { name: 'Наименование работ', price: 'Цена, р.' },
@@ -735,9 +782,9 @@ class Main extends Component {
                                                 <MDBListGroupItem
                                                     key={index}
                                                     role="tab"
-                                                    onClick={this.toggle(index.toString())}
+                                                    onClick={this.toggle(index)}
                                                     hover
-                                                    active={this.state.activeItem === index.toString()}
+                                                    active={this.state.activeItem === index}
                                                 >
                                                     {item.title}
                                                 </MDBListGroupItem>
@@ -751,9 +798,9 @@ class Main extends Component {
                                     {priceItems.map((item, index) => {
                                         return (
                                             <MDBTabPane
-                                                tabId={index.toString()}
+                                                tabId={index}
                                                 role="tabpanel"
-                                                className={'fade' + (index.toString() === this.state.activeItem ? ' show' : '')}
+                                                className={'fade' + (index === this.state.activeItem ? ' show' : '')}
                                             >
                                                 <table className='priceTable'>
                                                     <tbody>
