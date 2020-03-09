@@ -8,9 +8,12 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--light);
     background-color: var(--dark-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-i{
+i {
     color: var(--dark);
 }
 
@@ -124,46 +127,46 @@ a.middleHover:hover:before {
 
 .slick-prev,
 .slick-next {
-    width: 1.75rem!important;
-    height: 1.75rem!important;
-    top: 70px!important;
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    top: 70px !important;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    color: var(--dark-color)!important;
-    font-size: 1.75rem!important;
+    color: var(--dark-color) !important;
+    font-size: 1.75rem !important;
 }
 
 @media (min-width: 992px) {
 
     .slick-prev:before,
     .slick-next:before {
-        font-size: 2.25rem!important;
+        font-size: 2.25rem !important;
     }
 
     .slick-prev,
     .slick-next {
-        width: 2.25rem!important;
-        height: 2.25rem!important;
+        width: 2.25rem !important;
+        height: 2.25rem !important;
     }
 
     .slick-next {
-        right: -35px!important;
+        right: -35px !important;
     }
 
     .slick-prev {
-        left: -35px!important;
+        left: -35px !important;
     }
 }
 
 .slick-dots li button:before {
-    font-size: .55rem!important;
-    color: var(--dark-color)!important;
+    font-size: .55rem !important;
+    color: var(--dark-color) !important;
 }
 
 .slick-dots li.slick-active button:before {
-    color: var(--site-color)!important;
+    color: var(--site-color) !important;
 }
 
 /* Slider end*/
@@ -341,7 +344,7 @@ a.middleHover:hover:before {
         font-size: 1.5rem;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         padding-left: .5rem;
         padding-right: .5rem;
     }
@@ -371,11 +374,11 @@ a.middleHover:hover:before {
     cursor: pointer;
 }
 
-.pros-card-content{
+.pros-card-content {
     opacity: 0;
 }
 
-.star-message{
+.star-message {
     font-size: .85rem;
 }
 
@@ -445,7 +448,7 @@ a.middleHover:hover:before {
 
 /* Problems section start */
 
-#problems{
+#problems {
     padding-bottom: 75px;
 }
 
@@ -494,11 +497,11 @@ a.middleHover:hover:before {
 }
 
 #problems .slick-dots li button:before {
-    color: var(--site-color);
+    color: var(--site-color) !important;
 }
 
 #problems .slick-dots li.slick-active button:before {
-    color: var(--gray);
+    color: var(--gray) !important;
 }
 
 #problems .slick-arrow {
@@ -558,7 +561,7 @@ a.middleHover:hover:before {
 
 @media (max-width: 767px) {
     .simplebar-wrapper {
-        max-height: 40vh;
+        max-height: 40vh !important;
     }
 }
 
@@ -569,11 +572,20 @@ a.middleHover:hover:before {
     border-bottom-right-radius: .25rem;
 }
 
+.list-group-item {
+    color: var(--dark);
+}
+
 .list-group-item.active {
     z-index: 2;
     color: var(--light);
     background-color: var(--site-color);
     border-color: var(--site-color);
+}
+
+#price table td {
+    font-size: 1rem !important;
+    font-weight: 400;
 }
 
 #price tr:first-child {
@@ -585,7 +597,7 @@ a.middleHover:hover:before {
     padding-left: 15px;
 }
 
-#price td:nth-child(2n){
+#price td:nth-child(2n) {
     width: 100px;
     text-align: center;
 }
