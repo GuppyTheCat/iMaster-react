@@ -427,18 +427,18 @@ a.middleHover:hover:before {
 
 /* Gap section start */
 
-#gap1 p {
+#gap p {
     font-size: 1.3rem;
     text-align: left;
 }
 
 @media (max-width: 479px) {
-    #gap1 p {
+    #gap p {
         font-size: 1.1rem;
     }
 }
 
-#gap1 img {
+#gap img {
     max-width: 100%;
 }
 
@@ -510,9 +510,7 @@ a.middleHover:hover:before {
 
 /* Problems section end */
 
-#gap {
-    padding-bottom: 25px;
-}
+
 
 /* Help section start */
 
