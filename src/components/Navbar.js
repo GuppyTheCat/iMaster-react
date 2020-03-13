@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBCollapse, MDBNavbarNav, MDBNavItem } from "mdbreact";
 import { HashLink as Link } from 'react-router-hash-link';
+import {withRouter} from 'react-router-dom';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
 
     constructor(props) {
         super(props)
@@ -17,8 +18,9 @@ export default class Navbar extends Component {
     }
 
     render() {
+        let currentPath = this.props.location.pathname
         return (
-            <MDBNavbar dark expand="md" className="mt-3">
+            <MDBNavbar dark expand="lg" className="mt-3">
                 <MDBNavbarBrand className="align-middle">
                     <table>
                         <tbody>
@@ -38,14 +40,23 @@ export default class Navbar extends Component {
                 </MDBNavbarBrand>
                 <MDBNavbarToggler onClick={this.navbarToggleCollapse("navbarCollapse")} />
                 <MDBCollapse id="navbarCollapse" isOpen={this.state.collapseID} navbar>
-                    <MDBNavbarNav right className="mr-0 ml-auto">
-                        <MDBNavItem className="mr-4">
-                            <Link className="nav-link middleHover" smooth to="/#price">Прайс-лист</Link>
+                    <MDBNavbarNav right className="mr-0">
+                        <MDBNavItem className="mr-4 my-auto">
+                            <Link className="nav-link middleHover" to="/">Главная</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="mr-4">
-                            <Link className="nav-link middleHover" smooth to="/#footer">Контакты</Link>
+                        <MDBNavItem className="mr-4 my-auto">
+                            <Link className="nav-link middleHover" smooth to="/#price">Прайс</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="navbar-text navbar-phone mx-0">
+                        <MDBNavItem className="mr-4 my-auto">
+                            <Link className="nav-link middleHover" to="/services">Услуги</Link>
+                        </MDBNavItem>
+                        <MDBNavItem className="mr-4 my-auto">
+                            <Link className="nav-link middleHover" to="/articles">Статьи</Link>
+                        </MDBNavItem>
+                        <MDBNavItem className="mr-4 my-auto">
+                            <Link className="nav-link middleHover" smooth to={currentPath + '#footer'}>Контакты</Link>
+                        </MDBNavItem>
+                        <MDBNavItem className="navbar-text navbar-phone mx-0 my-auto">
                             <a className="navbar-phone-link middleHover middleHover_siteColor"
                                 href="tel:+7-953-553-0614">+7 (953) 553-06-14</a>
                         </MDBNavItem>
@@ -56,3 +67,5 @@ export default class Navbar extends Component {
     }
 
 }
+
+export default withRouter(Navbar)

@@ -75,6 +75,8 @@ h3 {
     padding: 14px 12px;
     color: var(--light);
     box-shadow: 0 0 1rem var(--site-color);
+    text-transform: none;
+    font-size: 1rem;
 }
 
 .btn-custom:hover {
@@ -197,7 +199,7 @@ a.middleHover:hover:before {
     margin-bottom: 1.5rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
     .navbar {
         background-color: var(--site-color);

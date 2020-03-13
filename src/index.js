@@ -7,6 +7,7 @@ import * as JivoSite from "react-jivosite";
 import * as serviceWorker from './serviceWorker';
 import Main from "./pages/main"
 import Services from "./pages/services"
+import Articles from "./pages/articles"
 
 class App extends Component {
     render() {
@@ -14,7 +15,9 @@ class App extends Component {
             <Router>
                 <JivoSite.Widget id="xtHesNTWxB" />  
                 <Route path="/" exact component={Main} />
-                <Route path="/services" component={Services} />
+                <Route path="/services" exact component={Services} />
+                <Route path="/articles" exact component={Articles} />
+                {/*<Route path="*" component={NotFound} />*/}
             </Router>
         );
     }

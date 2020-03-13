@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBListGroup, MDBListGroupItem, MDBTabContent, MDBTabPane } from "mdbreact";
+import { Helmet } from "react-helmet";
 import TrackVisibility from 'react-on-screen';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -548,6 +549,9 @@ class Main extends Component {
 
         return (
             <>
+                <Helmet>
+                    <title>Ремонт электроники в Нижнем Новгороде - iМастер</title>
+                </Helmet>
                 <MDBContainer id="main" fluid>
                     <MDBContainer className="h-100">
                         <MDBRow className="h-100">
@@ -778,7 +782,7 @@ class Main extends Component {
                         </MDBRow>
                     </MDBContainer>
                 </MDBContainer>
-                <Footer/>
+                <Footer />
             </>
         );
     }
