@@ -30,8 +30,8 @@ export default class Services extends Component {
             {
                 name: 'Замена клавиатуры на ноутбуке Acer',
                 title: 'Замена клавиатуры на ноутбуке Acer',
-                content: `<img src='../img/articles/acer_keyboard/1_webp.webp'></img>
-                <p>Здравствуйте, уважаемый посетитель сайта i-master.tech.<br /> В данной статье я хочу рассказать про все тонкости процесса
+                content: `<div class="text-center"><img src='img/articles/acer_keyboard/1_webp.webp'></div></img>
+                <p>Здравствуйте, уважаемый читатель сайта i-master.tech. В данной статье я хочу рассказать про все тонкости процесса
                     замены клавиатуры на ноутбуке Acer.<br />
                     Произвести ремонт клавиатуры, то есть её замену можно и самостоятельно, имея базовый опыт и необходимые
                     инструменты.<br />
@@ -47,30 +47,28 @@ export default class Services extends Component {
                     В каждом ноутбуке есть свои тонкости в снятии и установке новой клавиатуры, но в большинстве моделей клавиатура
                     меняется без разбора ноутбука. Например, в представленной модели Acer 5920.<br />
                     В иных случаях для снятия и установки клавиатуры вам потребуется полный разбор ноутбука, что крайне не рекомендуется
-                    делать, не имея достаточного опыта.<br /><br />
+                    делать, не имея достаточного опыта.<br />
                     <strong>Важно!</strong> Не забудьте извлечь аккумуляторную батарею и не выполняйте никакие работы, не обесточив
                     устройство.
                 </p>
-                <h4>Итак, начнем!</h4>
+                <h3>Итак, начнем!</h3>
                 <p>
                     Будь то замена клавиатуры на ноутбуке Asus либо замена клавиатуры на ноутбуке Samsung, вся процедура займет у вас не
                     более часа при аккуратном демонтаже и установке.
                 </p>
-                <img src='../img/articles/acer_keyboard/2_webp.webp'></img>
+                <div class="text-center"><img src='img/articles/acer_keyboard/2_webp.webp'></div></img>
                 <p>
                     При снятии клавиатуры на ноутбуке Acer, вам потребуется тонкий инструмент: желательно медицинская лопатка, а также
-                    медицинский зонд либо что-то очень похожее на него.<br /> Нужно слегка надавить вглубь ноутбука по
+                    медицинский зонд либо что-то очень похожее на него. При снятии клавиатуры нужно слегка надавить вглубь ноутбука по
                     направлению пластиковых держателей (см. фото) и параллельно немного подцепить клавиатуру, чуть приподнимая её. Не
                     бойтесь тянуть её наверх, клавиатуры зачастую очень мягкие и без проблем гнутся без риска повреждения.<br />
                     После снятия клавиатуры вы увидите единственный интерфейсный шлейф. Используйте пинцет либо тонкую отвертку для
                     изъятия шлейфа. Предварительно отодвиньте каретку в сторону экрана.<br />
-                </p>
-                <p>
                     <strong>Внимание!</strong> При установке новой клавиатуры в корпус предварительно необходимо проверить все кнопки на
                     наличие дефектов и только потом производить установку.
                 </p>
-                <img src='../img/articles/acer_keyboard/3_webp.webp'></img>
-                <h4>Могу Вас поздравить вы успешно произвели ремонт самостоятельно!</h4>
+                <div class="text-center"><img src='img/articles/acer_keyboard/3_webp.webp'></div></img>
+                <h3>Могу Вас поздравить вы успешно произвели ремонт самостоятельно!</h3>
                 <p>
                     Однако, если у вас:
                 </p>
@@ -81,9 +79,9 @@ export default class Services extends Component {
                 </ul>
                 <p>
                     <strong>
-                        Вы можете обратиться в iМастер. Средняя стоимость замены клавиатуры в районе 800р, срок ремонта от 10 минут.
+                        Вы можете обратиться в iМастер. Средняя стоимость замены клавиатуры в районе 800р. А срок ремонта от 10 минут.
                     </strong>
-                    <br /><br />
+                    <br />
                     При появлении любых вопросов, связанных с ремонтом вашего ноутбука или нетбука, вы всегда можете написать в чат на
                     сайте либо позвонить, а также написать в наш instagram.<br />
                     Если у вас нет времени на самостоятельный ремонт, самостоятельную замену клавиатуры, вы всегда можете обратиться ко
@@ -93,7 +91,7 @@ export default class Services extends Component {
             {
                 name: 'Замена дисплейного модуля Huawei P Smart',
                 title: 'Замена дисплейного модуля смартфона Huawei P Smart 2019',
-                content: `<img src='img/articles/huawei-p-smart_display/image1.webp'></img>
+                content: `<div class="text-center"><img src='img/articles/huawei-p-smart_display/image1.webp'></div></img>
                 <p>
                     В данной статье мы рассмотрим замену дисплейного модуля на примере смартфона Huawei P Smart 2019.<br />
                     Замена экрана Huawei P Smart 2019 практически идентична замене на любом другом устройстве, будь то замена
@@ -136,7 +134,7 @@ export default class Services extends Component {
                         и я с радостью проконсультирую вас! Стоимость замены дисплея начинается от 600р.</i>
                 </p>
                 <h5>Приступим!</h5>
-                <img src='img/articles/huawei-p-smart_display/image2.webp'></img>
+                <div class="text-center"><img src='img/articles/huawei-p-smart_display/image2.webp'></div></img>
                 <p>В первую очередь необходимо извлечь сим-лоток их очень часто ломают, так что будьте внимательны.<br />
                     Далее используя пластиковую карту начинайте отгибать корпус по кругу телефона до щелчка. Щелчок говорит о том, что
                     пластиковые замки отошли от корпуса.<br /> После того как вы извлекли заднюю крышку, не спешите убирать её. Нужно
@@ -156,10 +154,10 @@ export default class Services extends Component {
                     Все шлейфы у нас отключены. Теперь необходимо снять АКБ(батарею).<br />
                     Для легкого извлечения батареи рекомендую вам 2-3 кубика спирта залить в любое место в корпус под батарею, используя
                     шприц. Это значительно облегчит вам её демонтаж - спирт разъест клей и вы без труда сможете её извлечь, например
-                    пластиковой лопаткой (не использовать металлические инструменты)! В процессе извлечения проткните АКБ!<br />
+                    пластиковой лопаткой (не использовать металлические инструменты)! В процессе извлечения не проткните АКБ!<br />
                     На фото представлен телефон со снятой АКБ.
                 </p>
-                <img src='img/articles/huawei-p-smart_display/image3.webp'></img>
+                <div class="text-center"><img src='img/articles/huawei-p-smart_display/image3.webp'></div></img>
                 <p>После снятия АКБ переворачиваем телефон и проделываем тоже самое со спиртом и шприцом - 2-3 кубика с помощью иглы
                     смело выливаем по всему дисплею в рамку между корпусом и экраном. Через 2-3 минуты клей начнет терять свои свойства,
                     и вы без труда, используя скальпель, сможете его поддеть.<br />
@@ -182,7 +180,7 @@ export default class Services extends Component {
                     <strong>Если вы сомневаетесь в работоспособности нового экрана, рекомендую вам сначала просто подключить его, не
                         производя установку в корпус, и после полной проверки уже производить монтаж.</strong>
                 </p>
-                <img src='img/articles/huawei-p-smart_display/image4.webp'></img>
+                <div class="text-center"><img src='img/articles/huawei-p-smart_display/image4.webp'></div></img>
                 <p>Далее берем наш клей и аккуратно наносим его по всему периметру корпуса (не допускайте попадания в технологические
                     отверстия такие как динамик, микрофон и прочие).<br />
                     После нанесения клея необходимо сразу аккуратно установить экран в корпус (не забудьте про шлейф). После того как
@@ -192,7 +190,7 @@ export default class Services extends Component {
                     батарею.<br />
                     Поздравляю! Телефон готов!
                 </p>
-                <img src='img/articles/huawei-p-smart_display/image5.webp'></img>
+                <div class="text-center"><img src='img/articles/huawei-p-smart_display/image5.webp'></div></img>
                 <p>Незабываем проверить все еще раз перед закрытием крышки. Например, подключить шлейф датчика отпечатка пальца.<br />
                     Если он у вас перестал работать, вероятнее всего он просто не инициализировался системой. Перезагрузите телефон.
                 </p>
@@ -204,18 +202,149 @@ export default class Services extends Component {
                 </p>`
             },
             {
-                name: 'Article 3 name',
-                title: 'Article 3 title',
-                content: `3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam id excepturi incidunt doloremque nostrum error sint tempora placeat commodi voluptatum. Quibusdam deleniti soluta voluptates cum excepturi sequi corporis magnam vero.
-                Amet praesentium neque blanditiis culpa nulla, aliquid nemo eligendi qui reprehenderit eius nam debitis rem dolorem alias maiores tempora asperiores perferendis eos dolor adipisci optio perspiciatis nobis corporis consequatur. A?
-                Vel soluta pariatur molestias ut adipisci velit, sequi atque alias. Praesentium, quae sed sequi, officiis neque natus accusamus deleniti beatae, unde minus iure excepturi nemo. Obcaecati accusantium magnam incidunt architecto.
-                Nemo eum cupiditate harum vero quisquam autem pariatur, nulla veniam, in sit distinctio quam. Cupiditate maiores impedit voluptatum, iure excepturi, ratione numquam nisi dicta similique odit atque corporis molestias fugit.
-                Nesciunt nisi, autem accusamus amet quibusdam omnis reiciendis debitis dolorem facilis obcaecati, vitae saepe quia minus cupiditate, deleniti porro. Aut, nulla quae? Cupiditate culpa quaerat excepturi fugiat suscipit necessitatibus voluptates!
-                Eligendi est maiores ea, odio eius dicta. Repellat, tenetur autem tempora mollitia porro facere! Illum quae aliquid sint, quam ratione mollitia nobis molestias sequi corrupti perferendis, tempore, cum minima aperiam?
-                Ex tempora, dolorem deleniti laudantium itaque fugiat dolorum cum hic vitae velit? Nobis iure voluptate minus doloremque rerum nesciunt natus aliquid optio debitis nihil quidem et dolorum, quis tempore suscipit.
-                Aut recusandae aperiam laboriosam vitae totam excepturi a dolorum dolorem culpa fugit ipsam nostrum non rem, magnam doloribus est, maxime officia, reiciendis cum accusamus? A vero necessitatibus quas ad minima?
-                Maiores fuga repudiandae quasi recusandae. Id ad magnam velit nihil, distinctio ipsa accusantium architecto rerum, dolor optio possimus voluptatum fugiat impedit necessitatibus obcaecati hic, error nemo ea et minima? A?
-                Odio accusantium quia odit hic dicta eveniet magni, delectus esse, qui laboriosam ab temporibus saepe soluta laborum possimus similique cumque dolore eligendi porro. In illum quibusdam nihil iste beatae maiores?`
+                name: 'Замена материнской платы iPhone 6',
+                title: 'Замена материнской платы iPhone 6',
+                content: `<p>В данной статье мы рассмотри замену материнской (системной) платы на iPhone 6.</p>
+                <div class="text-center"><img src="img/articles/iphone6-motherboard/image001.webp"></div>
+                <p>В данном примере имеется исправная плата с отпечатком пальца, которую мы будем устанавливать взамен нерабочей. <br />
+                    Определимся с набором необходимых инструментов:
+                </p>
+                <ol>
+                    <li>Пинцет</li>
+                    <li>Кредитная карта</li>
+                    <li>Присоска Mechanic </li>
+                    <li>Пластиковая лопатка</li>
+                    <li>Медицинская лопатка</li>
+                    <li>Отвертка крестовая 1.5х25мм</li>
+                    <li>Отвертка звездочка 0.8мм</li>
+                </ol>
+                <div class="text-center"><img src="img/articles/iphone6-motherboard/image002.webp"></div>
+                <h4>Приступим.</h4>
+                <p>Берем отвертку №7 и в нижней части телефона откручиваем 2 винта крепления дисплейного модуля. <br />
+                    После этого нам необходимо снять дисплей из корпуса. Берем присоску, слегка тянем на себя и одновременно вставляем
+                    пластиковуюлопатку с нижней стороны между экраном и корпусом, чуть приподнимая. Нужно, чтобы заводская проклейка
+                    экрана отошла от корпуса, и тогда экран слегкостью выйдет из пазов крепления внутри корпуса. Будьте предельно
+                    аккуратны, на данном этапе разбора очень легко повредить экран.
+                </p>
+                <p>
+                    <i>
+                        Если вы понимаете, что у вас не хватает для этого опыта, жду Вас в числе моих клиентов. С радостью помогу вам с
+                        ремонтом вашего устройства. Замена платы обойдется вам от 600 рублей и займет примерно час.
+                        <br />
+                        Если же вы все таки решились делать ремонт самостоятельно идем дальше.
+                    </i>
+                </p>
+                <div class="text-center"><img src="img/articles/iphone6-motherboard/image003.webp"></div>
+                <p>После того как мы с вами сняли экран, необходимо снять все защитные экраны под болтами и крепление платы в корпус.
+                    <br />
+                    Рекомендую вам не путать винты и раскладывать их в строгой последовательности. Все винты в телефоне разные и очень
+                    часто получается так, что можно поставить болт большей длины, чем предусмотрено конструкцией, и в последствии вам
+                    придется искать «как отремонтировать пробитую гильзу», «провернул плату винтом, что делать» и «сколько стоит ремонт
+                    платы после неудачной замены на iPhone”.
+                </p>
+                <div class="text-center"><img src="img/articles/iphone6-motherboard/image004.webp"></div>
+                <p>Откручиваем винты, как показано на фото. Убираем защитные экраны и отключаем коннекторы от платы пластиковой
+                    лопаткой. Помним правило - всегда отключаем коннектор АКБ. Он находится под пластиной с двумя винтами.</p>
+                <div class="text-center"><img src="img/articles/iphone6-motherboard/image005.webp"></div>
+                    <p>На фото показаны все винты, которые необходимо открутить. Раскладывайте их в той же последовательности, чтобы не
+                        перепутать при сборке. <br />
+                        Извлекаем остальные винты и не забываем про сим-лоток. <br />
+                        Снимаем камеру, теперь она не зафиксирована. <br />
+                        Все коннекторы аккуратно отключаем пластиковой лопаткой либо пинцетом.
+                    </p>
+                    <div class="text-center"><img src="img/articles/iphone6-motherboard/image006.webp"></div>
+                    <div class="text-center"><img src="img/articles/iphone6-motherboard/image007.webp"></div>
+                    <p>Аккуратно извлекаем системную плату. Убедитесь, что все винты крепления сняты и шлейфы отключены. <br />
+                        Устанавливаем нашу новуюсистемную плату и собираем все в обратной последовательности. <br />
+                        После того как все винты находятся на своих местах, переходим к дисплейному модулю.
+                    </p>
+                    <div class="text-center"><img src="img/articles/iphone6-motherboard/image008.webp"></div>
+                    <p>
+                        Нам необходимо поменять кнопку «Домой», иначе старая кнопка работать у нас не будет также как и функция Touch
+                        ID.
+                        <br />
+                        Кнопка имеет прямую привязку к процессору телефона и поменять её на другую у нас не получится.<br />
+                        Отключайте кнопку аккуратно, не повредите шлейф. <br />
+                        После установки новой кнопки подключаем экран, закрепляем его защитным экраном и только потом подключаем АКБ. Не
+                        забывайте, все действия проводить только на обесточенном телефоне.<br />
+                        Теперь практически всё готово.
+                    </p>
+                    <div class="text-center"><img src="img/articles/iphone6-motherboard/image009.webp"></div>
+                    <p>Наш телефон включился и работает исправно. <br />
+                        Устанавливаем дисплейный модуль в корпус, закручиваем винты крепления и пользуемся практически новым телефоном,
+                        ведь
+                        мы поменяли всё его содержимое.</p>
+                    <p>
+                        <i>
+                            iМастер выполняет ремонт любой сложности и производит замену любых системных плат на iPhone. Замена
+                            системной
+                            платы на iPhone 6 обойдется вам от 600р. Замена платы на телефоне процедура не из легких и нужно обладать
+                            хотя
+                            бы базовыми навыками для этой процедуры.
+                        </i>
+                    </p>`
+            },
+            {
+                name: 'Замена дисплея, тачскрина на Samsung Galaxy J2 Prime',
+                title: 'Замена дисплея, сенсорного стекла (тачскрина) на Samsung Galaxy J2 Prime',
+                content: `<p>В этой статье мы рассмотрим замену дисплея и сенсорного стекла (тачскрина) на примере смартфона Samsung Galaxy J2
+                Prime.</p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image001.webp"></div>
+            <p>Процедура достаточно простая и не потребует большого количества оборудования и инструментов. <br /><br />
+                Нам потребуются:</p>
+            <ol>
+                <li>Щетка</li>
+                <li>Кредитная карта либо её аналог</li>
+                <li>Ватные палочки</li>
+                <li>Клей T7000 либо его аналоги</li>
+                <li>Медицинская лопатка</li>
+                <li>Скальпель</li>
+                <li>Отвертки</li>
+                <li>Спирт изопропиловый</li>
+                <li>Термофен (паяльная станция)</li>
+            </ol>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image002.webp"></div>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image003.webp"></div>
+            <p>Итак приступим.</p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image004.webp"></div>
+            <p>Снимаем заднюю крышку, отключаем батарею и видим пластиковую заглушку. Берем лопатку и аккуратно поддеваем заглушку с
+                правой стороны. Она служит для отключения дисплея при разборе телефона. Отключаем коннектор дисплея медицинской
+                лопаткой либо скальпелем. Будьте аккуратны и не повредите компоненты на системной плате.</p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image005.webp"></div>
+            <p>Откручиваем все винты. Их можно сложить вместе. При сборке вы не сможете их перепутать так как они все одинаковы.</p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image006.webp"></div>
+            <p>Ну а теперь самое интересное - нам нужно избавиться от поврежденного дисплея и тачскрина. Особая аккуратность не
+                требуется, запчасти уже повреждены и мы сможем быстро их извлечь, не опасаясь за их работоспособность.<br />
+                Выставляем температуру фена на 250 градусов и аккуратно прогреваем экран по кругу в течении 1-2 минут. Наша задача —
+                максимально нагреть сенсорное стекло и разогреть клей, для того чтобы без особых усилий извлечь тачскрин. <br />
+                После прогрева берем скальпель и аккуратно поддеваем сенсорное стекло, приподнимая вверх. Далее проделываем тоже
+                самое с дисплеем. Все достаточно просто. Самое главное - не торопиться и делать все предельно аккуратно.
+            </p>
+            <p>На фотографии видно, что должно получиться после снятия поврежденных деталей.</p>
+            <p>Далее берем щетку и изопропиловый спирт и обезжириваем рамку, в которой ранее был установлен тачскрин. Не забываем
+                удалять остатки клея. <br />
+                Берем ватные палочки и проделываем тоже самое. Нам нужно полностью убрать остатки клея для установки новых деталей.
+                <br />
+                Берем наш новый дисплей и тачскрин. Удаляем транспортировочные пленки и устанавливаем дисплей на тачскрин как
+                показано на фото ниже.
+            </p>
+            <p><strong>Внимание!</strong>Дисплей необходимо устанавливать с такими же отступами как и на старом дисплее, иначе он не
+                влезет в корпус.</p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image007.webp"></div>
+            <p>Подключаем шлейф тачскрина в коннектор который расположен на дисплее. </p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image008.webp"></div>
+            <p>
+                Устанавливаем аккуратно наш новый дисплей и сенсорное стекло в корпус и подключаем к плате. <br />
+                Проверяем все ли у нас работает и собираем в обратной последовательности.
+            </p>
+            <div class="text-center"><img src="img/articles/galaxy-j2-prime_display-touchscreen/image009.webp"></div>
+            <p>
+                <i>Процесс замены дисплея, тачскрина либо сенсорного модуля практически ничем не отличается от других моделей
+                    Samsung. Самое главное это - наличие инструмента и желание произвести ремонт самостоятельно. <br />
+                    Но не забывайте - если у вас нет желания либо опыта, лучше доверить работу специалисту. iМастер производит
+                    ремонт телефонов по доступным ценам, от 600р и сроком ремонта не более часа.
+                </i>
+            </p>`
             }
         ]
 

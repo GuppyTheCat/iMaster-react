@@ -1,5 +1,5 @@
 .article-content img {
-    width: 100%;
+    max-width: 80%;
 }
 
 h4 {
