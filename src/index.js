@@ -9,16 +9,24 @@ import Main from "./pages/main"
 import Services from "./pages/services"
 import Articles from "./pages/articles"
 
+import ReactGA from 'react-ga';
+import { YMInitializer } from 'react-yandex-metrika';
+
 class App extends Component {
     render() {
+        ReactGA.initialize('UA-155045980-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
         return (
-            <Router>
-                <JivoSite.Widget id="xtHesNTWxB" />  
-                <Route path="/" exact component={Main} />
-                <Route path="/services" exact component={Services} />
-                <Route path="/articles" exact component={Articles} />
-                {/*<Route path="*" component={NotFound} />*/}
-            </Router>
+            <>
+                <YMInitializer accounts={[57340663]} />
+                <JivoSite.Widget id="xtHesNTWxB" />
+                <Router>
+                    <Route path="/" exact component={Main} />
+                    <Route path="/services" exact component={Services} />
+                    <Route path="/articles" exact component={Articles} />
+                    {/*<Route path="*" component={NotFound} />*/}
+                </Router>
+            </>
         );
     }
 }

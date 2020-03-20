@@ -1,11 +1,31 @@
-.article-content img {
-    max-width: 80%;
-}
-
 h4 {
     margin-top: 1.5rem;
 }
 
 p{
-    margin: 1rem 0;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+.article-content img {
+    /*max-width: 80%;*/
+    max-width: 100%;
+    margin: .75rem 0;
+}
+
+.article-content .card{
+    font-weight: 300;
+}
+
+.article-content .card-header{
+    font-weight: bold;
+}
+
+.article-content .card-body{
+    font-style: italic;
+    padding: 1rem;
+}
+
+.article-content .btn{
+    margin-top: 1.5rem;
 }

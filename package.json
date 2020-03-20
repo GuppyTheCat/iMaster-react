@@ -8,6 +8,8 @@
     "mdbreact": "^4.25.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-ga": "^2.7.0",
+    "react-google-analytics": "^0.2.0",
     "react-helmet": "^5.2.1",
     "react-jivosite": "^1.0.0",
     "react-on-screen": "^2.1.1",
@@ -15,6 +17,7 @@
     "react-scripts": "3.4.0",
     "react-scroll": "^1.7.16",
     "react-slick": "^0.25.2",
+    "react-yandex-metrika": "^2.6.0",
     "simplebar-react": "^2.1.0",
     "slick-carousel": "^1.8.1"
   },
