@@ -1,6 +1,6 @@
 module.exports = {
     articlesItems: [{
-            id: 'notebook_acer_keyboard',
+            id: 'acer_keyboard',
             name: 'Замена клавиатуры на ноутбуке Acer',
             title: 'Замена клавиатуры на ноутбуке Acer',
             img: '/img/articles/acer_keyboard/preview.webp',
@@ -82,7 +82,7 @@ module.exports = {
     </div>`
         },
         {
-            id: 'phone_huawei-p-smart-2019_display',
+            id: 'huawei-p-smart-2019_display',
             name: 'Замена дисплейного модуля Huawei P Smart',
             title: 'Замена дисплейного модуля смартфона Huawei P Smart 2019',
             img: '/img/articles/huawei-p-smart_display/preview.webp',
@@ -224,7 +224,7 @@ module.exports = {
     </div>`
         },
         {
-            id: 'phone_iphone6_motherboard',
+            id: 'iphone6_motherboard',
             name: 'Замена материнской платы iPhone 6',
             title: 'Замена материнской платы iPhone 6',
             img: '/img/articles/iphone6-motherboard/preview.webp',
@@ -309,7 +309,7 @@ module.exports = {
 </div>`
         },
         {
-            id: 'phone_samsung-j2-prime_display',
+            id: 'samsung-j2-prime_display',
             name: 'Замена дисплея, тачскрина на Samsung Galaxy J2 Prime',
             title: 'Замена дисплея, сенсорного стекла (тачскрина) на Samsung Galaxy J2 Prime',
             img: '/img/articles/galaxy-j2-prime_display-touchscreen/preview.webp',

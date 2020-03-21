@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage, MDBCardBody, MDBCardText, MDBBtn, MDBLink } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage, MDBCardBody, MDBCardText, MDBBtn, MDBLink, MDBView, MDBMask } from "mdbreact";
 import { Helmet } from "react-helmet";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -37,14 +37,19 @@ export default class Services extends Component {
                                 {articles.map((item, index) => {
                                     return (
                                         <MDBCol sm="6" lg="4" xl="3" className="text-center mt-4 d-flex" key={index}>
-                                            <Link className="d-flex" to={'/articles/' + item.id}>
-                                                <MDBCard>
-                                                    <img className="img-fluid" src={item.img} alt="" />
-                                                    <MDBCardBody>
-                                                        <MDBCardText>{item.name}</MDBCardText>
-                                                    </MDBCardBody>
-                                                </MDBCard>
-                                            </Link>
+                                            <MDBCard>
+                                                <MDBView hover>
+                                                    <Link className="d-flex" to={'/articles/' + item.id}>
+                                                        <MDBCardImage className="img-fluid" src={item.img} alt=""/>
+                                                        <MDBMask className="flex-center" overlay="black-light">
+                                                            <span className="white-text lead">Читать</span>
+                                                        </MDBMask>
+                                                    </Link>
+                                                </MDBView>
+                                                <MDBCardBody>
+                                                    <MDBCardText>{item.name}</MDBCardText>
+                                                </MDBCardBody>
+                                            </MDBCard>
                                         </MDBCol>
                                     )
                                 })}
