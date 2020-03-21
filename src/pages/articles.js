@@ -36,7 +36,7 @@ export default class Services extends Component {
                             <MDBRow center>
                                 {articles.map((item, index) => {
                                     return (
-                                        <MDBCol sm="6" lg="4" xl="3" className="text-center mt-4 d-flex" key={index}>
+                                        <MDBCol sm="6" lg="4" xl="3" className="text-center mt-4 d-flex justify-content-center" key={index}>
                                             <MDBCard>
                                                 <MDBView hover>
                                                     <Link className="d-flex" to={'/articles/' + item.id}>

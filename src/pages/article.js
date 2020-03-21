@@ -24,7 +24,7 @@ export default class Services extends Component {
                     </MDBContainer>
                     <MDBContainer fluid className="section">
                         <MDBRow center>
-                            <MDBCol size="10" className="bg-light article-content text-center">
+                            <MDBCol size="12" md="10" className="bg-light article-content text-center">
                                 <h3>{item.title}</h3>
                                 <div className="text-left" dangerouslySetInnerHTML={{ __html: item.content }}></div>
                                 <button type="button" className="btn btn-custom" onClick={() => eval("jivo_api.open()")}>

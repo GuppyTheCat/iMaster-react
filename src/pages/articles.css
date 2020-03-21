@@ -7,7 +7,8 @@
     display: flex;
 }
 
-.card .card-text{
+.card .card-body .card-text{
     margin: auto;
+    color: var(--dark);
 }
 
