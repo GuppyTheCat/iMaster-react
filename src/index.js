@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import Main from "./pages/main"
 import Services from "./pages/services"
 import Articles from "./pages/articles"
+import Article from "./pages/article"
 
 import ReactGA from 'react-ga';
 import { YMInitializer } from 'react-yandex-metrika';
@@ -24,6 +25,7 @@ class App extends Component {
                     <Route path="/" exact component={Main} />
                     <Route path="/services" exact component={Services} />
                     <Route path="/articles" exact component={Articles} />
+                    <Route path="/articles/:articleId" exact component={Article} />
                     {/*<Route path="*" component={NotFound} />*/}
                 </Router>
             </>
