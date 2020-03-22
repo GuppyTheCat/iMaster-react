@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBListGroup, MDBListGroupItem, MDBTabContent, MDBTabPane } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBListGroup, MDBListGroupItem, MDBTabContent, MDBTabPane, MDBBreadcrumb, MDBBreadcrumbItem } from "mdbreact";
 import { Helmet } from "react-helmet";
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
@@ -309,6 +309,13 @@ export default class Services extends Component {
                     </MDBContainer>
                     <MDBContainer fluid className="section devices-block">
                         <MDBContainer fluid>
+                            <MDBRow>
+                                <MDBCol>
+                                    <MDBBreadcrumb>
+                                        <MDBBreadcrumbItem active >Услуги</MDBBreadcrumbItem>
+                                    </MDBBreadcrumb>
+                                </MDBCol>
+                            </MDBRow>
                             <MDBRow>
                                 <MDBCol md="4" lg="3" className="text-center simplebar-block">
                                     <SimpleBar>

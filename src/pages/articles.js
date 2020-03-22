@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage, MDBCardBody, MDBCardText, MDBBtn, MDBLink, MDBView, MDBMask } from "mdbreact";
 import { Helmet } from "react-helmet";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardImage, MDBCardBody, MDBCardText, MDBView, MDBMask, MDBBreadcrumb, MDBBreadcrumbItem  } from "mdbreact";
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import * as exp from '../exports';
 import './main.css';
 import './articles.css';
 
-import { Link } from 'react-router-dom';
-import * as exp from '../exports';
-
-export default class Services extends Component {
+export default class Articles extends Component {
     constructor(props) {
         super(props)
 
@@ -33,6 +32,13 @@ export default class Services extends Component {
                     </MDBContainer>
                     <MDBContainer fluid className="section">
                         <MDBContainer fluid>
+                            <MDBRow>
+                                <MDBCol>
+                                    <MDBBreadcrumb>
+                                        <MDBBreadcrumbItem active>Статьи</MDBBreadcrumbItem>
+                                    </MDBBreadcrumb>
+                                </MDBCol>
+                            </MDBRow>
                             <MDBRow center>
                                 {articles.map((item, index) => {
                                     return (

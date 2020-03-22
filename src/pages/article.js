@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { Helmet } from "react-helmet";
-import 'simplebar/dist/simplebar.min.css';
+import { MDBContainer, MDBRow, MDBCol, MDBBreadcrumb, MDBBreadcrumbItem } from "mdbreact";
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import * as exp from '../exports';
 import './main.css';
 import './article.css';
-import * as exp from '../exports';
 
-export default class Services extends Component {
+
+export default class Article extends Component {
 
     render() {
         const item = exp.articlesItems.filter(item => item.id === this.props.match.params.articleId)[0];
@@ -24,6 +25,12 @@ export default class Services extends Component {
                     </MDBContainer>
                     <MDBContainer fluid className="section">
                         <MDBRow center>
+                            <MDBCol size="12" md="10" className="breadcrumb-container">
+                                <MDBBreadcrumb>
+                                    <MDBBreadcrumbItem ><Link to='/articles'>Статьи</Link></MDBBreadcrumbItem>
+                                    <MDBBreadcrumbItem active>{item.name}</MDBBreadcrumbItem>
+                                </MDBBreadcrumb>
+                            </MDBCol>
                             <MDBCol size="12" md="10" className="bg-light article-content text-center">
                                 <h3>{item.title}</h3>
                                 <div className="text-left" dangerouslySetInnerHTML={{ __html: item.content }}></div>

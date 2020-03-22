@@ -2,7 +2,7 @@ h4 {
     margin-top: 1.5rem;
 }
 
-p{
+p {
     margin-top: .75rem;
     margin-bottom: .75rem;
 }
@@ -13,7 +13,7 @@ p{
     border-radius: .25rem;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .article-content {
         padding: 1rem 1rem;
     }
@@ -24,19 +24,23 @@ p{
     margin: .75rem 0;
 }
 
-.article-content .card{
+.article-content .card {
     font-weight: 300;
 }
 
-.article-content .card-header{
+.article-content .card-header {
     font-weight: bold;
 }
 
-.article-content .card-body{
+.article-content .card-body {
     font-style: italic;
     padding: 1rem;
 }
 
-.article-content .btn{
+.article-content .btn {
     margin-top: 1.5rem;
+}
+
+.breadcrumb-container {
+    padding: 0;
 }

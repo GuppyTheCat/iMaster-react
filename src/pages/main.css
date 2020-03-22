@@ -618,6 +618,10 @@ a.middleHover:hover:before {
 
 /* Price section end */
 
+
+
+/* Footer section start */
+
 #footer {
     padding-top: 0;
     padding-bottom: 75px;
@@ -659,4 +663,22 @@ a.middleHover:hover:before {
     color: var(--gray);
     font-size: .9rem;
     white-space: normal;
+}
+
+/* Footer section end */
+
+.breadcrumb {
+    background-color: var(--site-color);
+}
+
+.breadcrumb .breadcrumb-item{
+    color: var(--light) !important;
+}
+
+.breadcrumb .breadcrumb-item a{
+    color: var(--light) !important;
+}
+
+.breadcrumb .breadcrumb-item a:hover{
+    color: var(--dark-color) !important;
 }
