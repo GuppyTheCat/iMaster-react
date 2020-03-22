@@ -549,9 +549,6 @@ class Main extends Component {
 
         return (
             <>
-                <Helmet>
-                    <title>Ремонт электроники в Нижнем Новгороде - iМастер</title>
-                </Helmet>
                 <MDBContainer id="main" fluid>
                     <MDBContainer className="h-100">
                         <MDBRow className="h-100">
@@ -731,7 +728,7 @@ class Main extends Component {
                 <MDBContainer id="price" fluid className="bg-dark text-center">
                     <h2>Прайс-лист</h2>
                     <p>Здесь представлены цены на основные виды ремонта.<br />Если вы не нашли в списке поломку своего
-            устройства, напишите мне!<br />iМастер починит, что угодно.</p>
+            устройства, напишите мне!<br />iМастер починит что угодно.</p>
                     <MDBContainer>
                         <MDBRow>
                             <MDBCol md="4">
