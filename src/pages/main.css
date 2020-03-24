@@ -177,7 +177,7 @@ a.middleHover:hover:before {
 
 /* Main section start */
 #main {
-    background: url(/img/main.jpg);
+    background: url(/img/main.webp);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -517,7 +517,7 @@ a.middleHover:hover:before {
 /* Help section start */
 
 #help {
-    background: url(/img/parallax-img-1.png);
+    background: url(/img/parallax-img-1.webp);
     background-position: center;
     background-size: cover;
     width: 100%;

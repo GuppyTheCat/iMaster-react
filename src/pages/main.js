@@ -214,32 +214,32 @@ class Main extends Component {
         const problemsItems = [
             {
                 title: 'Попала вода',
-                img: 'img/problems/problem1.jpg',
+                img: 'img/problems/problem1.webp',
                 alt: ''
             },
             {
                 title: 'Разбился экран',
-                img: 'img/problems/problem2.jpg',
+                img: 'img/problems/problem2.webp',
                 alt: ''
             },
             {
                 title: 'Не работает динамик',
-                img: 'img/problems/problem3.jpg',
+                img: 'img/problems/problem3.webp',
                 alt: ''
             },
             {
                 title: 'Плохой сигнал',
-                img: 'img/problems/problem4.jpg',
+                img: 'img/problems/problem4.webp',
                 alt: ''
             },
             {
                 title: 'Не работают кнопки',
-                img: 'img/problems/problem5.jpg',
+                img: 'img/problems/problem5.webp',
                 alt: ''
             },
             {
                 title: 'Садится аккумулятор',
-                img: 'img/problems/problem6.jpg',
+                img: 'img/problems/problem6.webp',
                 alt: ''
             }
         ]
@@ -628,7 +628,7 @@ class Main extends Component {
                                 </p>
                             </MDBCol>
                             <MDBCol className="d-none d-md-block" md="4">
-                                <img src="img/iphone.png" alt="" />
+                                <img src="img/iphone.webp" alt="" />
                             </MDBCol>
                         </MDBRow>
                     </MDBContainer>
