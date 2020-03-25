@@ -13,7 +13,7 @@ export default class Articles extends Component {
         super(props)
 
         this.state = {
-            articles: exp.articlesItems
+            articles: exp.articlesItemsNew
         }
     }
 
