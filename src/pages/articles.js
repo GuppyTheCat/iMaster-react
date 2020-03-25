@@ -9,17 +9,9 @@ import './main.css';
 import './articles.css';
 
 export default class Articles extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            articles: exp.articlesItemsNew
-        }
-    }
-
 
     render() {
-        const { articles } = this.state;
+        const articles = exp.articlesItems;
 
         return (
             <>

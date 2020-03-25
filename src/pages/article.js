@@ -56,7 +56,7 @@ export default class Article extends Component {
     }
 
     render() {
-        const item = exp.articlesItemsNew.filter(item => item.id === this.props.match.params.articleId)[0]
+        const item = exp.articlesItems.filter(item => item.id === this.props.match.params.articleId)[0]
 
         return (
             <>
