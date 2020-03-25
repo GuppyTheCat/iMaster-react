@@ -51,7 +51,7 @@ class Navbar extends Component {
                             <Link className="nav-link middleHover" to="/services">Услуги</Link>
                         </MDBNavItem>
                         <MDBNavItem className="mr-4 my-auto">
-                            <Link className="nav-link middleHover" to="/articles">Статьи</Link>
+                            <Link className="nav-link middleHover" to="/articlesnew">Статьи</Link>
                         </MDBNavItem>
                         <MDBNavItem className="mr-4 my-auto">
                             <Link className="nav-link middleHover" smooth to={currentPath + '#footer'}>Контакты</Link>

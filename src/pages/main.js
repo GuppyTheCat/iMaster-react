@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBListGroup, MDBListGroupItem, MDBTabContent, MDBTabPane } from "mdbreact";
-import { Helmet } from "react-helmet";
 import TrackVisibility from 'react-on-screen';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -691,7 +690,9 @@ class Main extends Component {
                                                     <table>
                                                         <tbody>
                                                             <tr>
-                                                                <td><img src={item.img} alt={item.alt} /></td>
+                                                                <td>
+                                                                    <img src={item.img} alt={item.alt} />
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>

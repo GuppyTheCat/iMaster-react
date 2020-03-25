@@ -55,10 +55,8 @@ class App extends Component {
                         <Route path="/services" exact component={Services} />
                         <Route path="/articles" exact component={Articles} />
                         <Route path="/articles/:articleId" exact component={Article} />
-                        {/*
                         <Route path="/articlesnew" exact component={ArticlesNew} />
                         <Route path="/articlesnew/:articleId" exact component={ArticleNew} />
-                        */}
                         <Route component={NotFound} />
                     </Switch>
                 </Router>
