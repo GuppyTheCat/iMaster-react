@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 import { YMInitializer } from 'react-yandex-metrika';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
-import * as JivoSite from "react-jivosite";
+/* import * as JivoSite from "react-jivosite"; */
 import * as serviceWorker from './serviceWorker';
 import Main from "./pages/main"
 import Services from "./pages/services"
@@ -18,6 +18,7 @@ class App extends Component {
     render() {
         ReactGA.initialize('UA-155045980-1');
         ReactGA.pageview(window.location.pathname + window.location.search);
+
         return (
             <>
                 <Helmet>
@@ -28,6 +29,7 @@ class App extends Component {
                     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic" rel="stylesheet" />
                     <link href="/libs/fontawesome/css/all.min.css" rel="stylesheet" />
+                    {/*<script src="//code.jivosite.com/widget/xtHesNTWxB" async></script>*/}
                     <title>Ремонт электроники в Нижнем Новгороде - iМастер</title>
                     <meta name="title" content="Ремонт электроники в Нижнем Новгороде - iМастер" />
                     <meta name="description"
@@ -46,7 +48,7 @@ class App extends Component {
                     <meta name="theme-color" content="#ffffff" />
                 </Helmet>
                 <YMInitializer accounts={[57340663]} />
-                <JivoSite.Widget id="xtHesNTWxB" />
+                {/* <JivoSite.Widget id="xtHesNTWxB" /> */}
                 <Router>
                     <Switch>
                         <Route path="/" exact component={Main} />
@@ -68,7 +70,8 @@ if (rootElement.hasChildNodes()) {
     render(<App />, rootElement);
 }
 
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register();
+serviceWorker.unregister();

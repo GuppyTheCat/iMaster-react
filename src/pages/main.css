@@ -314,7 +314,7 @@ a.middleHover:hover:before {
     text-decoration: none !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .navbar-phone-link {
         color: var(--light) !important;
         padding: 8px 0;
