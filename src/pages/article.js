@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Helmet } from "react-helmet"
 import { MDBContainer, MDBRow, MDBCol, MDBBreadcrumb, MDBBreadcrumbItem } from "mdbreact"
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import SimpleReactLightbox from 'simple-react-lightbox'
 import { SRLWrapper } from 'simple-react-lightbox'
 import Navbar from '../components/Navbar'
@@ -59,48 +59,50 @@ export default class Article extends Component {
         const item = exp.articlesItems.filter(item => item.id === this.props.match.params.articleId)[0]
 
         return (
-            <>
-                <Helmet>
-                    <title> Ремонт электроники в Нижнем Новгороде - iМастер | {item.title} </title>
-                </Helmet>
-                <MDBContainer>
-                    <MDBContainer className="navbar-container position-relative">
-                        <Navbar />
-                    </MDBContainer>
-                    <MDBContainer fluid className="section" >
-                        <MDBRow center >
-                            <MDBCol size="12" md="10" className="breadcrumb-container" >
-                                <MDBBreadcrumb >
-                                    <MDBBreadcrumbItem>
-                                        <Link to='/articles'> Статьи </Link>
-                                    </MDBBreadcrumbItem>
-                                    <MDBBreadcrumbItem active > {item.name}
-                                    </MDBBreadcrumbItem>
-                                </MDBBreadcrumb >
-                            </MDBCol>
-                            <MDBCol size="12" md="10" className="bg-light article-content text-center" >
-                                <SimpleReactLightbox>
-                                    <SRLWrapper>
-                                        <h3>{item.title}</h3>
-                                        <div className="text-left">
-                                            {
-                                                item.content.map((block, index) => {
-                                                    return this.formatBlock(block, index)
-                                                })
-                                            }
-                                        </div>
-                                        <button type="button" className="btn btn-custom" onClick={() => eval("jivo_api.open()")}>
-                                            Написать мастеру
+            item ?
+                <>
+                    <Helmet>
+                        <title> Ремонт электроники в Нижнем Новгороде - iМастер | {item.title} </title>
+                    </Helmet>
+                    <MDBContainer>
+                        <MDBContainer className="navbar-container position-relative">
+                            <Navbar />
+                        </MDBContainer>
+                        <MDBContainer fluid className="section" >
+                            <MDBRow center >
+                                <MDBCol size="12" md="10" className="breadcrumb-container" >
+                                    <MDBBreadcrumb >
+                                        <MDBBreadcrumbItem>
+                                            <Link to='/articles'> Статьи </Link>
+                                        </MDBBreadcrumbItem>
+                                        <MDBBreadcrumbItem active > {item.name}
+                                        </MDBBreadcrumbItem>
+                                    </MDBBreadcrumb >
+                                </MDBCol>
+                                <MDBCol size="12" md="10" className="bg-light article-content text-center" >
+                                    <SimpleReactLightbox>
+                                        <SRLWrapper>
+                                            <h3>{item.title}</h3>
+                                            <div className="text-left">
+                                                {
+                                                    item.content.map((block, index) => {
+                                                        return this.formatBlock(block, index)
+                                                    })
+                                                }
+                                            </div>
+                                            <button type="button" className="btn btn-custom" onClick={() => eval("jivo_api.open()")}>
+                                                Написать мастеру
                                 </button>
-                                    </SRLWrapper>
-                                </SimpleReactLightbox>
-                            </MDBCol>
-                        </MDBRow>
+                                        </SRLWrapper>
+                                    </SimpleReactLightbox>
+                                </MDBCol>
+                            </MDBRow>
+                        </MDBContainer>
+                        <Footer />
                     </MDBContainer>
-                    <Footer />
-                </MDBContainer>
 
-            </>
+                </>
+                : <Redirect to="/404" />
         )
     }
 }

@@ -55,6 +55,7 @@ class App extends Component {
                         <Route path="/services" exact component={Services} />
                         <Route path="/articles" exact component={Articles} />
                         <Route path="/articles/:articleId" exact component={Article} />
+                        <Route path="/404" exact component={NotFound} />
                         <Route component={NotFound} />
                     </Switch>
                 </Router>
