@@ -6,7 +6,7 @@ module.exports = {
         img: '/img/articles/acer_keyboard/preview.webp',
         content: [{
             type: 'img',
-            content: '/img/articles/acer_keyboard/1_webp.webp'
+            content: '/img/articles/acer_keyboard/image001.webp'
         }, {
             type: 'p',
             content: `Здравствуйте, уважаемый посетитель сайта i-master.tech. В данной статье я хочу рассказать про все тонкости процесса
@@ -47,7 +47,7 @@ module.exports = {
                 более часа при аккуратном демонтаже и установке.`
         }, {
             type: 'img',
-            content: '/img/articles/acer_keyboard/2_webp.webp'
+            content: '/img/articles/acer_keyboard/image002.webp'
         }, {
             type: 'p',
             content: `При снятии клавиатуры на ноутбуке Acer, вам потребуется тонкий инструмент: желательно медицинская лопатка, а также
@@ -67,7 +67,7 @@ module.exports = {
             }
         }, {
             type: 'img',
-            content: '/img/articles/acer_keyboard/3_webp.webp'
+            content: '/img/articles/acer_keyboard/image003.webp'
         }, {
             type: 'h4',
             content: 'Могу Вас поздравить! Вы успешно произвели самостоятельный ремонт!'
@@ -99,7 +99,7 @@ module.exports = {
         img: `/img/articles/huawei-p-smart_display/preview.webp`,
         content: [{
             type: `img`,
-            content: `/img/articles/huawei-p-smart_display/image1.webp`
+            content: `/img/articles/huawei-p-smart_display/image001.webp`
         }, {
             type: `p`,
             content: `В данной статье мы рассмотрим замену дисплейного модуля на примере смартфона Huawei P Smart 2019.`
@@ -175,7 +175,7 @@ module.exports = {
             content: `Крышка снята!`
         }, {
             type: `img`,
-            content: `/img/articles/huawei-p-smart_display/image2.webp`
+            content: `/img/articles/huawei-p-smart_display/image002.webp`
         }, {
             type: `p`,
             content: `На фото вы видите 4 стрелки:`
@@ -202,7 +202,7 @@ module.exports = {
             content: `На фото ниже представлен телефон со снятой АКБ.`
         }, {
             type: `img`,
-            content: `/img/articles/huawei-p-smart_display/image3.webp`
+            content: `/img/articles/huawei-p-smart_display/image003.webp`
         }, {
             type: `p`,
             content: `После снятия АКБ переворачиваем телефон и проделываем тоже самое со спиртом и шприцом - 2-3 кубика с помощью иглы
@@ -245,7 +245,7 @@ module.exports = {
             и после полной проверки уже производить монтаж.`
         }, {
             type: `img`,
-            content: `/img/articles/huawei-p-smart_display/image4.webp`
+            content: `/img/articles/huawei-p-smart_display/image004.webp`
         }, {
             type: `p`,
             content: `Далее берем наш клей и аккуратно наносим его по всему периметру корпуса (не допускайте попадания в технологические
@@ -263,7 +263,7 @@ module.exports = {
             content: `Поздравляю! Телефон готов!`
         }, {
             type: `img`,
-            content: `/img/articles/huawei-p-smart_display/image5.webp`
+            content: `/img/articles/huawei-p-smart_display/image005.webp`
         }, {
             type: `p`,
             content: `Не забываем проверить все еще раз перед закрытием крышки. Например, подключить шлейф датчика отпечатка пальца.`
