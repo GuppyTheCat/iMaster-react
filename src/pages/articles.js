@@ -37,7 +37,7 @@ export default class Articles extends Component {
                                         <MDBCol sm="6" lg="4" xl="3" className="text-center mt-4 d-flex justify-content-center" key={index}>
                                             <MDBCard>
                                                 <MDBView hover>
-                                                    <Link className="d-flex" to={'/articles/' + item.id}>
+                                                    <Link className="d-flex" to={'/articles/' + item.id + '/'}>
                                                         <MDBCardImage className="img-fluid" src={item.img} alt=""/>
                                                         <MDBMask className="flex-center" overlay="black-light">
                                                             <span className="white-text lead">Читать</span>
