@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBCollapse, MDBNavbarNav, MDBNavItem } from "mdbreact";
 import { HashLink as Link } from 'react-router-hash-link';
-import {withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Navbar extends Component {
 
@@ -48,10 +48,13 @@ class Navbar extends Component {
                             <Link className="nav-link middleHover" smooth to="/#price">Прайс</Link>
                         </MDBNavItem>
                         <MDBNavItem className="mr-4 my-auto">
-                            <Link className="nav-link middleHover" to="/services">Услуги</Link>
+                            <Link className="nav-link middleHover" to="/services/">Услуги</Link>
                         </MDBNavItem>
                         <MDBNavItem className="mr-4 my-auto">
-                            <Link className="nav-link middleHover" to="/articles">Статьи</Link>
+                            <Link className="nav-link middleHover" to="/articles/">Статьи</Link>
+                        </MDBNavItem>
+                        <MDBNavItem className="mr-4 my-auto">
+                            <Link className="nav-link middleHover" to="/spare_parts/">Запчасти</Link>
                         </MDBNavItem>
                         <MDBNavItem className="mr-4 my-auto">
                             <Link className="nav-link middleHover" smooth to={currentPath + '#footer'}>Контакты</Link>

@@ -12,6 +12,7 @@ import Main from "./pages/main"
 import Services from "./pages/services"
 import Articles from "./pages/articles"
 import Article from "./pages/article"
+import SpareParts from "./pages/spare_parts"
 import NotFound from "./pages/404"
 
 class App extends Component {
@@ -55,6 +56,7 @@ class App extends Component {
                         <Route path="/services/" exact component={Services} />
                         <Route path="/articles/" exact component={Articles} />
                         <Route path="/articles/:articleId/" exact component={Article} />
+                        <Route path="/spare_parts/" exact component={SpareParts} />
                         <Route path="/404/" exact component={NotFound} />
                         <Route component={NotFound} />
                     </Switch>
