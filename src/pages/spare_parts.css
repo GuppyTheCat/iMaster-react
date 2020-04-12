@@ -1,0 +1,19 @@
+.parts-brand {
+    border-radius: .5rem;
+    background-color: var(--site-color);
+    color: var(--light-color);
+    padding: .35rem 1.75rem;
+    font-size: 1.25rem;
+    width: 150px;
+}
+
+.parts-block{
+    background-color: rgba(248,249,250, 0.1);
+    border-radius: .5rem;
+}
+
+
+.parts-description span{
+    color: var(--light);
+}
+

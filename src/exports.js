@@ -1764,11 +1764,7 @@ module.exports = {
             model: 'Micromax X249+',
             description: 'дисплей ориг. ',
             price: '300'
-        }, {
-            model: '',
-            description: '',
-            price: ''
-        }, ]
+        }]
     }, {
         brand: 'ARK',
         items: [{

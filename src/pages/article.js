@@ -92,7 +92,7 @@ export default class Article extends Component {
                                             </div>
                                             <button type="button" className="btn btn-custom" onClick={() => eval("jivo_api.open()")}>
                                                 Написать мастеру
-                                </button>
+                                            </button>
                                         </SRLWrapper>
                                     </SimpleReactLightbox>
                                 </MDBCol>
