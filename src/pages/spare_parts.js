@@ -46,7 +46,6 @@ export default class SpareParts extends Component {
                                                             </p>
                                                             <div className='parts-description mt-0 mb-4'>
                                                                 <p className='my-0'>
-                                                                    {/* `${part.description} ${part.price}р` */}
                                                                     <span>
                                                                         {part.description}
                                                                     </span>

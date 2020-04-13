@@ -352,6 +352,16 @@ a.middleHover:hover:before {
     }
 }
 
+.navbar-nav > .nav-item {
+    margin-right: 1.5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-nav > .nav-item {
+        margin-right: .40rem;
+    }
+}
+
 .main-description>.row>div>button {
     margin-top: 8px;
 }
@@ -671,14 +681,14 @@ a.middleHover:hover:before {
     background-color: var(--site-color);
 }
 
-.breadcrumb .breadcrumb-item{
+.breadcrumb .breadcrumb-item {
     color: var(--light) !important;
 }
 
-.breadcrumb .breadcrumb-item a{
+.breadcrumb .breadcrumb-item a {
     color: var(--light) !important;
 }
 
-.breadcrumb .breadcrumb-item a:hover{
+.breadcrumb .breadcrumb-item a:hover {
     color: var(--dark-color) !important;
 }

@@ -1,9 +1,24 @@
 module.exports = {
+    articlesFilters: [{
+        type: 'deviceType',
+        title: 'Тип устройства',
+        content: [
+            'Телефон', 'Планшет', 'Ноутбук', 'Наушники'
+        ]
+    }, {
+        type: 'deviceBrand',
+        title: 'Производитель',
+        content: [
+            'Acer', 'DNS', 'Explay', 'iPhone', 'Huawei', 'HOCO', 'Lenovo', 'Nokia', 'Samsung'
+        ]
+    }],
     articlesItems: [{
         id: 'acer_keyboard',
         name: 'Замена клавиатуры на ноутбуке Acer',
         title: 'Замена клавиатуры на ноутбуке Acer',
         img: '/img/articles/acer_keyboard/preview.webp',
+        deviceType: 'Ноутбук',
+        deviceBrand: 'Acer',
         content: [{
             type: 'img',
             content: '/img/articles/acer_keyboard/image001.webp'
@@ -97,6 +112,8 @@ module.exports = {
         name: `Замена дисплейного модуля Huawei P Smart`,
         title: `Замена дисплейного модуля смартфона Huawei P Smart 2019`,
         img: `/img/articles/huawei-p-smart_display/preview.webp`,
+        deviceType: 'Телефон',
+        deviceBrand: 'Huawei',
         content: [{
             type: `img`,
             content: `/img/articles/huawei-p-smart_display/image001.webp`
@@ -284,6 +301,8 @@ module.exports = {
         name: `Замена материнской платы iPhone 6`,
         title: `Замена материнской платы iPhone 6`,
         img: `/img/articles/iphone6_motherboard/preview.webp`,
+        deviceType: 'Телефон',
+        deviceBrand: 'iPhone',
         content: [{
             type: `p`,
             content: `В данной статье мы рассмотри замену материнской (системной) платы на iPhone 6.`
@@ -416,6 +435,8 @@ module.exports = {
         name: `Замена дисплея, тачскрина на Samsung Galaxy J2 Prime`,
         title: `Замена дисплея, сенсорного стекла (тачскрина) на Samsung Galaxy J2 Prime`,
         img: `/img/articles/galaxy-j2-prime_display-touchscreen/preview.webp`,
+        deviceType: 'Телефон',
+        deviceBrand: 'Samsung',
         content: [{
             type: `p`,
             content: `В этой статье мы рассмотрим замену дисплея и сенсорного стекла(тачскрина) на примере смартфона Samsung Galaxy J2 Prime.`
@@ -529,6 +550,8 @@ module.exports = {
         name: `Ремонт наушников HOCO`,
         title: `Ремонт наушников HOCO`,
         img: `/img/articles/hoco_earphones/preview.webp`,
+        deviceType: 'Наушники',
+        deviceBrand: 'HOCO',
         content: [{
             type: `p`,
             content: `Часто при использовании гарнитуры либо наушников появляется проблема, когда не работают один либо оба наушника. 
@@ -637,6 +660,8 @@ module.exports = {
         name: `Замена слота сим карты`,
         title: `Замена слота для сим карты на телефоне samsung GT - i9001`,
         img: `/img/articles/samsung-gt-i9001_simslot/preview.webp`,
+        deviceType: 'Телефон',
+        deviceBrand: 'Samsung',
         content: [{
             type: `p`,
             content: `В данной статье мы с вами рассмотрим процесс замена слота для сим карты(сим - коннектора) на телефоне Samsung.`
@@ -825,6 +850,8 @@ module.exports = {
         name: `Замена контроллера питания на телефоне Nokia`,
         title: `Замена контроллера питания на телефоне Nokia`,
         img: `/img/articles/nokia_power-controller/preview.webp`,
+        deviceType: 'Телефон',
+        deviceBrand: 'Nokia',
         content: [{
             type: `p`,
             content: `В данной статье мы рассмотрим достаточно частую неисправность - ваш телефон перестал включаться, 
@@ -987,6 +1014,8 @@ module.exports = {
         name: `Замена дисплея iPhone 5`,
         title: `Замена дисплея iPhone 5`,
         img: `/img/articles/iphone5_display/preview.webp`,
+        deviceType: 'Телефон',
+        deviceBrand: 'iPhone',
         content: [{
             type: `p`,
             content: `В данной статье мы с вами рассмотрим процесс замены дисплейного модуля на телефоне iPhone 5.`
@@ -1052,6 +1081,8 @@ module.exports = {
         name: 'Замена платы на iPhone 5S',
         title: 'Замена системной платы на iPhone 5S',
         img: '/img/articles/iphone-5s_motherboard/preview.webp',
+        deviceType: 'Телефон',
+        deviceBrand: 'iPhone',
         content: [{
             type: 'p',
             content: `В данной статье мы рассмотрим с вами замену системной платы на iPhone 5S.`
@@ -1126,6 +1157,8 @@ module.exports = {
         name: 'Ремонт разъема зарядки Explay Informer',
         title: 'Ремонт разъема зарядки Explay Informer',
         img: '/img/articles/explay-informer_power/preview.webp',
+        deviceType: 'Планшет',
+        deviceBrand: 'Explay',
         content: [{
             type: 'p',
             content: `Нам достался планшет после другого сервиса. Планшет не заряжается, не включается, возможно, требуется прошивка. Что делать?`
@@ -1261,6 +1294,8 @@ module.exports = {
         name: 'Замена АКБ на планшете Lenovo Tab 2',
         title: 'Замена АКБ на планшете Lenovo Tab 2 X30L A10-30',
         img: '/img/articles/lenovo-tab2_battery/preview.webp',
+        deviceType: 'Планшет',
+        deviceBrand: 'Lenovo',
         content: [{
             type: 'p',
             content: `В этой статье мы рассмотрим достаточно простой ремонт по замене аккумулятора на планшете Lenovo. Ремонт не займет у вас много 
@@ -1322,6 +1357,8 @@ module.exports = {
         name: 'Замена тачскрина на телефоне DNS',
         title: 'Замена тачскрина на телефоне DNS',
         img: '/img/articles/dns-phone_touchscreen/preview.webp',
+        deviceType: 'Телефон',
+        deviceBrand: 'DNS',
         content: [{
             type: 'img',
             content: `/img/articles/dns-phone_touchscreen/image001.webp`
@@ -1539,244 +1576,244 @@ module.exports = {
         brand: 'Xiaomi',
         items: [{
             model: 'Xiaomi Redmi 3',
-            description: 'Модуль дисплей + тачскрин, ориг. Золото на рамке.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Золото, на рамке.',
             price: '700'
         }, {
             model: 'Xiaomi Redmi Note 4X',
-            description: 'Модуль дисплей + тачскрин ориг. Чёрный на рамке.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '800'
         }]
     }, {
         brand: 'Meizu',
         items: [{
             model: 'Meizu U20 (U685h)',
-            description: 'Модуль дисплей + тачскрин, черный. Оригинальный, на рамке.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '800'
         }]
     }, {
         brand: 'Nokia',
         items: [{
             model: 'Nokia 630/635',
-            description: 'Модуль дисплей + тачскрин ориг. Чёрный на рамке.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '700'
         }, {
-            model: 'Nokia asha 501/502/503',
-            description: 'Модуль дисплей + тачскрин ориг. Чёрный на рамке.',
+            model: 'Nokia Asha 501/502/503',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '500'
         }, {
             model: 'Nokia Lumia 920 (RM-820, RM-821, RM-822)',
-            description: 'Модуль дисплей + тачскрин ориг. Чёрный на рамке.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '1000'
         }, {
             model: 'Nokia Lumia 820 (RM-825) ',
-            description: 'модуль дисплей + тачскрин черный ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '1000'
         }, {
             model: 'Nokia Lumia 550 (RM-1127)',
-            description: 'модуль дисплей + тачскрин черный ориг на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '450'
         }, {
             model: 'Nokia Lumia 900 ',
-            description: 'модуль дисплей + тачскрин ориг. черный',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный.',
             price: '700'
         }]
     }, {
         brand: 'LG',
         items: [{
-            model: 'Lg d325',
-            description: 'дисплей + тачскрин ориг. Чёрный на рамке',
+            model: 'LG D325',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '700'
         }, {
-            model: 'Lg D690',
-            description: 'тачскрин чёрный ориг.',
+            model: 'LG D690',
+            description: 'Тачскрин, оригинальный. Чёрный.',
             price: '300'
         }, {
             model: 'LG D295 L Fino',
-            description: 'исплей + тачскрин черный ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '600'
         }]
     }, {
         brand: 'DEXP',
         items: [{
-            model: 'Dexp larus z1',
-            description: 'тачскрин чёрный ориг. На рамке',
+            model: 'DEXP Larus Z1',
+            description: 'Тачскрин, оригинальный. Чёрный, на рамке.',
             price: '300'
         }, {
-            model: 'Dexp Larus Z1 lcm-35v011 fpc-35v011-a1',
-            description: 'дисплей ориг. ',
+            model: 'DEXP Larus Z1 lcm-35v011 fpc-35v011-a1',
+            description: 'Дисплей, оригинальный',
             price: '400'
         }, ]
     }, {
         brand: 'Sony',
         items: [{
             model: 'Sony ZL',
-            description: 'Модуль дисплей + тачскрин чёрный ориг. На рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '800'
         }, {
             model: 'Sony D2105 Xperia E1',
-            description: 'тачскрин чёрный ориг. На рамке ориг.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '300'
         }, {
             model: 'Sony Xperia E1 D2005/D2004/D2105/D2104/D2114',
-            description: 'дисплей ориг.',
+            description: 'Дисплей, оригинальный',
             price: '600'
         }, {
             model: 'Sony Xperia Z3 Plus/Z4 E6553',
-            description: 'модуль дисплей + тачскрин черный ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '1300'
         }, {
             model: 'Sony Xperia M2 (D2302/D2303/D2305/D2306)',
-            description: 'тачскрин копия черный',
+            description: 'Тачскрин, копия, чёрный',
             price: '200'
         }, ]
     }, {
         brand: 'Huawei',
         items: [{
-            model: 'Huawei y5 II / Honor 5a / y6 II ',
-            description: 'Модуль дисплей + тачскрин чёрный ориг. На рамке ',
+            model: 'Huawei Y5 II / Honor 5A / Y6 II ',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '800'
         }, {
-            model: 'huawei P6-U06',
-            description: 'модуль дисплей + тачскрин белый ориг. на рамке',
+            model: 'Huawei P6-U06',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '600'
         }, ]
     }, {
         brand: 'Highscreen',
         items: [{
-            model: 'Highscreen thor',
-            description: 'модуль дисплей + тачскрин чёрный ориг. На рамке ',
+            model: 'Highscreen Thor',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '1500'
         }, ]
     }, {
         brand: 'Samsung',
         items: [{
-            model: 'Samsung gt-s 5380 / 5380d',
-            description: 'дисплей ориг. ',
+            model: 'Samsung GT-S 5380 / 5380d',
+            description: 'Дисплей, оригинальный.',
             price: '300'
         }, {
-            model: 'Samsung gt-s 5380d',
-            description: 'тачскрин чёрный ориг. На рамке',
+            model: 'Samsung GT-S 5380d',
+            description: 'Тачскрин, оригинальный. Чёрный, на рамке.',
             price: '150'
         }, {
-            model: 'Samsung J1 mini j105 / j106',
-            description: 'дисплей + тач. черный ориг. на рамке',
+            model: 'Samsung J1 Mini J105 / J106',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '400'
         }, ]
     }, {
         brand: 'Lenovo',
         items: [{
             model: 'Lenovo A328',
-            description: 'дисплей + тачскрин белый ориг. На рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Белый, на рамке.',
             price: '650'
         }, {
-            model: 'Lenovo a536',
-            description: 'дисплей ориг.',
+            model: 'Lenovo A536',
+            description: 'Дисплей, оригинальный',
             price: '300'
         }, ]
     }, {
         brand: 'Fly',
         items: [{
             model: 'Fly IQ 434',
-            description: 'Дисплей ориг. ',
+            description: 'Дисплей, оригинальный',
             price: '200'
         }, {
             model: 'Fly IQ4407',
-            description: 'Дисплей ориг. ',
+            description: 'Дисплей, оригинальный',
             price: '500'
         }, ]
     }, {
         brand: 'ZTE',
         items: [{
             model: 'ZTE Blade T221 A5 Pro AF3',
-            description: 'дисплей ориг.',
+            description: 'Дисплей, оригинальный',
             price: '600'
         }, {
             model: 'ZTE Blade A3 A5 A5 Pro AF3',
-            description: 'тачскрин черный ориг.',
+            description: 'Тачскрин, оригинальный. Чёрный.',
             price: '200'
         }, {
             model: 'ZTE U236/ U215/ U208/ R516/ S300/ F160/ MTC 840',
-            description: 'дисплей ориг. ',
+            description: 'Дисплей, оригинальный',
             price: '250'
         }, ]
     }, {
         brand: 'Philips',
         items: [{
             model: 'Philips W3568',
-            description: 'дисплей ориг. ',
+            description: 'Дисплей, оригинальный',
             price: '650'
         }, {
             model: 'Philips S308',
-            description: 'дисплей + тачскрин черный ориг на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '650'
         }, ]
     }, {
         brand: 'Explay',
         items: [{
             model: 'Explay Golf ',
-            description: 'дисплей + тачскрин белый ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Белый, на рамке.',
             price: '600'
         }, ]
     }, {
         brand: 'Prestigio',
         items: [{
             model: 'Prestigio MultiPhone 5507 Duo',
-            description: 'модуль дисплей + тачскрин черный ориг.',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '700'
         }, {
             model: 'Prestigio WIZE NK3 PSP 3527 DUO',
-            description: 'дисплей ориг.',
+            description: 'Дисплей, оригинальный',
             price: '600'
         }, ]
     }, {
         brand: 'Alcatel',
         items: [{
             model: 'Alcatel OneTouch 7041D Pop C7',
-            description: 'дисплей + тачскрин черный ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '700'
         }, {
             model: 'Alcatel 4030 / 4030D',
-            description: 'дисплей + тачскрин черный ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '500'
         }, {
             model: 'Alcatel OneTouch 4032D/4033X/4033D (Pop C2/Pop C3)',
-            description: 'дисплей + тачскрин ориг на рамке ',
+            description: 'Модуль дисплей + тачскрин, оригинальный. На рамке.',
             price: '400'
         }, {
             model: 'Alcatel Pop C5 5036D/OT5036D',
-            description: 'дисплей + тачскрин черынй ориг на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '400'
         }, {
             model: 'Alcatel OneTouch 6012/6012X/6012A/6012D/6012E/6012W Idol Mini',
-            description: 'модуль дисплей + тачскрин черный ориг. на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '400'
         }, ]
     }, {
         brand: 'DNS',
         items: [{
             model: 'DNS S4508',
-            description: 'модуль дисплей + тачскрин черный ориг. на рамке ',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '1000'
         }]
     }, {
         brand: 'Micromax',
         items: [{
             model: 'Micromax X249+',
-            description: 'дисплей ориг. ',
+            description: 'Дисплей, оригинальный',
             price: '300'
         }]
     }, {
         brand: 'ARK',
         items: [{
             model: 'ARK Benefit M7 (Archos)',
-            description: 'модуль ориг. черный на рамке',
+            description: 'Модуль дисплей + тачскрин, оригинальный. Чёрный, на рамке.',
             price: '600'
         }]
     }, {
         brand: 'Hummer',
         items: [{
             model: 'Hummer H5',
-            description: 'тачскрин ориг. на рамке черный',
+            description: 'Тачскрин, оригинальный. Чёрный, на рамке.',
             price: '1500'
         }, ]
     }]

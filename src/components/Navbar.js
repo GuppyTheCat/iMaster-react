@@ -41,22 +41,22 @@ class Navbar extends Component {
                 <MDBNavbarToggler onClick={this.navbarToggleCollapse("navbarCollapse")} />
                 <MDBCollapse id="navbarCollapse" isOpen={this.state.collapseID} navbar>
                     <MDBNavbarNav right className="mr-0">
-                        <MDBNavItem className="mr-4 my-auto">
+                        <MDBNavItem className="my-auto">
                             <Link className="nav-link middleHover" to="/">Главная</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="mr-4 my-auto">
+                        <MDBNavItem className="my-auto">
                             <Link className="nav-link middleHover" smooth to="/#price">Прайс</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="mr-4 my-auto">
+                        <MDBNavItem className="my-auto">
                             <Link className="nav-link middleHover" to="/services/">Услуги</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="mr-4 my-auto">
+                        <MDBNavItem className="my-auto">
                             <Link className="nav-link middleHover" to="/articles/">Статьи</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="mr-4 my-auto">
+                        <MDBNavItem className="my-auto">
                             <Link className="nav-link middleHover" to="/spare_parts/">Запчасти</Link>
                         </MDBNavItem>
-                        <MDBNavItem className="mr-4 my-auto">
+                        <MDBNavItem className="my-auto">
                             <Link className="nav-link middleHover" smooth to={currentPath + '#footer'}>Контакты</Link>
                         </MDBNavItem>
                         <MDBNavItem className="navbar-text navbar-phone mx-0 my-auto">
