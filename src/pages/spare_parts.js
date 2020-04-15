@@ -31,7 +31,7 @@ export default class SpareParts extends Component {
                             </MDBRow>
                             {items.map((item, index) => {
                                 return (
-                                    <MDBRow center key={index} className='parts-container my-3'>
+                                    <MDBRow center key={index} className='parts-container'>
                                         <MDBCol size='12' classname='mb-5'>
                                             <span className='parts-brand d-inline-block mb-1 text-center'>{item.brand}</span>
                                         </MDBCol>

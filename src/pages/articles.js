@@ -17,39 +17,37 @@ export default class Articles extends Component {
             articles: exp.articlesItems,
             filters: exp.articlesFilters,
             filteredArticles: exp.articlesItems,
-            deviceBrand: 'All',
-            deviceType: 'All'
+            deviceBrand: 'Все',
+            deviceType: 'Все'
         }
     }
 
-    forceUpdateHandler = () => {
-        this.forceUpdate()
-    };
-
-    filterArticles = (e) => {
+    setFilters = (e) => {
         const value = e.target.value
         const type = e.target.dataset.type
 
-        const { articles, deviceBrand, deviceType } = this.state
-        this.setState({ [type]: value }, () => {
+        this.setState({ [type]: value }, () => { this.filterArticles() })
+    }
 
-            let filteredArticles = []
-            for (let article of articles) {
-                if (deviceBrand === 'All' || deviceBrand === article.deviceBrand) {
-                    if (deviceType === 'All' || deviceType === article.deviceType) {
-                        filteredArticles.push(article)
-                    }
+    filterArticles = () => {
+        const { articles, deviceBrand, deviceType } = this.state
+
+        let filteredArticles = []
+
+        for (let article of articles) {
+            if (deviceBrand === 'Все' || deviceBrand === article.deviceBrand) {
+                if (deviceType === 'Все' || deviceType === article.deviceType) {
+                    filteredArticles.push(article)
                 }
             }
+        }
 
-            this.setState({ filteredArticles })
-        })
+        this.setState({ filteredArticles })
     }
 
 
     render() {
         const { filters, filteredArticles } = this.state
-        console.log(filteredArticles)
 
         return (
             <>
@@ -72,24 +70,18 @@ export default class Articles extends Component {
                             <MDBRow>
                                 {filters.map((filter, filterIndex) => {
                                     return (
-                                        <MDBCol size='3' key={filterIndex}>
-                                            <span>{filter.title}</span>
-                                            <select className="browser-default custom-select">
-                                                <option
-                                                    value='All'
-                                                    data-type={filter.type}
-                                                    key={0}
-                                                    onClick={e => this.filterArticles(e)}
-                                                >
-                                                    Все
-                                                </option>
+                                        <MDBCol md='6' lg='4' xl='3' key={filterIndex}>
+                                            <span className='d-inline-block mb-2 filter-title'>{filter.title}</span>
+                                            <select
+                                                className="browser-default custom-select mb-2"
+                                                value={this.state[filter.title]}
+                                                data-type={filter.type}
+                                                onChange={e => this.setFilters(e)}
+                                            >
                                                 {filter.content.map((value, valueIndex) => {
                                                     return (
                                                         <option
-                                                            value={value}
-                                                            data-type={filter.type}
-                                                            key={valueIndex + 1}
-                                                            onClick={e => this.filterArticles(e)}
+                                                            key={valueIndex}
                                                         >
                                                             {value}
                                                         </option>

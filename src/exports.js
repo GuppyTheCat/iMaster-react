@@ -3,13 +3,13 @@ module.exports = {
         type: 'deviceType',
         title: 'Тип устройства',
         content: [
-            'Телефон', 'Планшет', 'Ноутбук', 'Наушники'
+            'Все', 'Телефон', 'Планшет', 'Ноутбук', 'Наушники'
         ]
     }, {
         type: 'deviceBrand',
         title: 'Производитель',
         content: [
-            'Acer', 'DNS', 'Explay', 'iPhone', 'Huawei', 'HOCO', 'Lenovo', 'Nokia', 'Samsung'
+            'Все', 'Acer', 'Apple', 'DNS', 'Explay', 'Huawei', 'HOCO', 'Lenovo', 'Nokia', 'Samsung'
         ]
     }],
     articlesItems: [{
@@ -302,7 +302,7 @@ module.exports = {
         title: `Замена материнской платы iPhone 6`,
         img: `/img/articles/iphone6_motherboard/preview.webp`,
         deviceType: 'Телефон',
-        deviceBrand: 'iPhone',
+        deviceBrand: 'Apple',
         content: [{
             type: `p`,
             content: `В данной статье мы рассмотри замену материнской (системной) платы на iPhone 6.`
@@ -1015,7 +1015,7 @@ module.exports = {
         title: `Замена дисплея iPhone 5`,
         img: `/img/articles/iphone5_display/preview.webp`,
         deviceType: 'Телефон',
-        deviceBrand: 'iPhone',
+        deviceBrand: 'Apple',
         content: [{
             type: `p`,
             content: `В данной статье мы с вами рассмотрим процесс замены дисплейного модуля на телефоне iPhone 5.`
@@ -1082,7 +1082,7 @@ module.exports = {
         title: 'Замена системной платы на iPhone 5S',
         img: '/img/articles/iphone-5s_motherboard/preview.webp',
         deviceType: 'Телефон',
-        deviceBrand: 'iPhone',
+        deviceBrand: 'Apple',
         content: [{
             type: 'p',
             content: `В данной статье мы рассмотрим с вами замену системной платы на iPhone 5S.`
