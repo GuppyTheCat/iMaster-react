@@ -126,58 +126,72 @@ class Main extends Component {
 
         const electronicSliderItems = [
             {
+                id: 0,
                 title: 'Телефоны',
                 classes: 'fa fa-mobile-alt'
             },
             {
+                id: 1,
                 title: 'Планшеты',
                 classes: 'fas fa-tablet-alt'
             },
             {
+                id: 2,
                 title: 'Компьютеры',
                 classes: 'fa fa-desktop'
             },
             {
+                id: 3,
                 title: 'Ноутбуки',
                 classes: 'fa fa-laptop'
             },
             {
+                id: 4,
                 title: 'Телевизоры',
                 classes: 'fa fa-tv'
             },
             {
+                id: 5,
                 title: 'Игровые консоли',
                 classes: 'fas fa-game-console-handheld'
             },
             {
+                id: 6,
                 title: 'Фотоаппараты',
                 classes: 'fa fa-camera'
             },
             {
+                id: 7,
                 title: 'Видеокамеры',
                 classes: 'fa fa-video'
             },
             {
+                id: 8,
                 title: 'Плееры',
                 classes: 'fa fa-mp3-player'
             },
             {
+                id: 9,
                 title: 'Навигаторы',
                 classes: 'fa fa-location-arrow'
             },
             {
+                id: 10,
                 title: 'Пауэрбанки',
                 classes: 'fa fa-battery-three-quarters'
             },
             {
+                id: 11,
                 title: 'Вейпы',
                 classes: 'fa fa-smoking'
             },
             {
+                id: 12,
                 title: 'Электроинструмент',
                 classes: 'fa fa-tools'
             },
             {
+                id: 13,
                 title: 'ЭБУ',
                 classes: 'fa fa-car-mechanic'
             }
@@ -585,13 +599,13 @@ class Main extends Component {
                                     {({ isVisible }) => (
                                         <Slider {...sliderElectronicsSettings} className={'electronics-slider animated ' + (isVisible ? 'fadeInRight' : '')}>
                                             {
-                                                electronicSliderItems.map((item, index) => {
+                                                electronicSliderItems.map(item => {
                                                     return (
                                                         <div
-                                                            key={index}
+                                                            key={item.id}
                                                             className={
                                                                 'electronics-card' +
-                                                                (index === 0 ? ' track' : '')
+                                                                (item.id === 0 ? ' track' : '')
                                                             }>
                                                             <table>
                                                                 <tbody>
