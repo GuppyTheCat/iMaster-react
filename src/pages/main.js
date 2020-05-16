@@ -124,7 +124,7 @@ class Main extends Component {
             ]
         };
 
-        const electronicSliderItems = [
+        /* const electronicSliderItems = [
             {
                 id: 0,
                 title: 'Телефоны',
@@ -194,6 +194,66 @@ class Main extends Component {
                 id: 13,
                 title: 'ЭБУ',
                 classes: 'fa fa-car-mechanic'
+            }
+        ] */
+
+        /* Here we're doing a trick for correct postbuild with react-snap */
+        const electronicSliderItems = [
+            {
+                title: 'Телефоны',
+                classes: 'fa fa-smoking'
+            },
+            {
+                title: 'Планшеты',
+                classes: 'fa fa-tools'
+            },
+            {
+                title: 'Компьютеры',
+                classes: 'fa fa-car-mechanic'
+            },
+            {
+                title: 'Ноутбуки',
+                classes: 'fa fa-mobile-alt'
+            },
+            {
+                title: 'Телевизоры',
+                classes: 'fas fa-tablet-alt'
+            },
+            {
+                title: 'Игровые консоли',
+                classes: 'fa fa-desktop'
+            },
+            {
+                title: 'Фотоаппараты',
+                classes: 'fa fa-laptop'
+            },
+            {
+                title: 'Видеокамеры',
+                classes: 'fa fa-tv'
+            },
+            {
+                title: 'Плееры',
+                classes: 'fas fa-game-console-handheld'
+            },
+            {
+                title: 'Навигаторы',
+                classes: 'fa fa-camera'
+            },
+            {
+                title: 'Пауэрбанки',
+                classes: 'fa fa-video'
+            },
+            {
+                title: 'Вейпы',
+                classes: 'fa fa-mp3-player'
+            },
+            {
+                title: 'Электроинструмент',
+                classes: 'fa fa-location-arrow'
+            },
+            {
+                title: 'ЭБУ',
+                classes: 'fa fa-battery-three-quarters'
             }
         ]
 
@@ -599,13 +659,13 @@ class Main extends Component {
                                     {({ isVisible }) => (
                                         <Slider {...sliderElectronicsSettings} className={'electronics-slider animated ' + (isVisible ? 'fadeInRight' : '')}>
                                             {
-                                                electronicSliderItems.map(item => {
+                                                electronicSliderItems.map((item, index) => {
                                                     return (
                                                         <div
-                                                            key={item.id}
+                                                            key={index}
                                                             className={
                                                                 'electronics-card' +
-                                                                (item.id === 0 ? ' track' : '')
+                                                                (index === 0 ? ' track' : '')
                                                             }>
                                                             <table>
                                                                 <tbody>

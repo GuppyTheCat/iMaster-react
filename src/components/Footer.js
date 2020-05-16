@@ -75,6 +75,17 @@ export default class Footer extends Component {
                                             </span>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <span>
+                                                <strong>Адрес : </strong>
+                                                <a className="middleHover middleHover_siteColor"
+                                                    href="https://2gis.ru/n_novgorod/firm/2674540563117496/43.855826%2C56.329874?m=43.855861%2C56.329858%2F15.64">
+                                                    г. Нижний Новгород, ул. Чаадаева 5д (ТЦ Сокол), 3ий этаж, П22А
+                                                </a>
+                                            </span>
+                                        </td>
+                                    </tr>
                                     <tr className="footer-contacts-button">
                                         <td>
                                             <button type="button" className="btn btn-custom" onClick={() => eval("jivo_api.open()")}>
